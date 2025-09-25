@@ -404,4 +404,134 @@ import Footer from '../components/Footer.astro';
       gap: 2rem;
     }
   }
+
+  /* Scroll Animations */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .fade-in.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .slide-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .slide-in-left.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .slide-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .slide-in-right.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .scale-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease-out;
+  }
+
+  .scale-in.animate {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Enhanced hero image with float effect */
+  .hero__image-element {
+    transition: transform 0.3s ease;
+  }
+
+  .hero__image-element:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Stagger animation delays for grid items */
+  .product-card:nth-child(1) { transition-delay: 0.1s; }
+  .product-card:nth-child(2) { transition-delay: 0.2s; }
+  .product-card:nth-child(3) { transition-delay: 0.3s; }
+  .product-card:nth-child(4) { transition-delay: 0.4s; }
+
+  .value-card:nth-child(1) { transition-delay: 0.1s; }
+  .value-card:nth-child(2) { transition-delay: 0.2s; }
+  .value-card:nth-child(3) { transition-delay: 0.3s; }
 </style>
+
+<script>
+  // Intersection Observer for scroll animations
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -100px 0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      }
+    });
+  }, observerOptions);
+
+  // Observe elements for animation
+  document.addEventListener('DOMContentLoaded', () => {
+    // Add animation classes to elements
+    document.querySelector('.hero__text')?.classList.add('slide-in-left');
+    document.querySelector('.hero__image')?.classList.add('slide-in-right');
+    
+    // Products section
+    document.querySelector('.products h2')?.classList.add('fade-in');
+    document.querySelector('.products .section__subtitle')?.classList.add('fade-in');
+    document.querySelectorAll('.product-card').forEach(card => {
+      card.classList.add('scale-in');
+    });
+
+    // Values section
+    document.querySelector('.values h2')?.classList.add('fade-in');
+    document.querySelector('.values .section__subtitle')?.classList.add('fade-in');
+    document.querySelectorAll('.value-card').forEach(card => {
+      card.classList.add('slide-in-left');
+    });
+
+    // CTA section
+    document.querySelector('.cta')?.classList.add('fade-in');
+
+    // Observe all animated elements
+    document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Trigger hero animations immediately
+    setTimeout(() => {
+      document.querySelector('.hero__text')?.classList.add('animate');
+      document.querySelector('.hero__image')?.classList.add('animate');
+    }, 300);
+  });
+
+  // Parallax effect for hero section
+  window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const heroImage = document.querySelector('.hero__image-element') as HTMLElement;
+    if (heroImage) {
+      heroImage.style.transform = `translateY(${scrolled * 0.1}px)`;
+    }
+  });
+</script>

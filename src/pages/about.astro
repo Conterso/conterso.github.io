@@ -492,4 +492,113 @@ import Footer from '../components/Footer.astro';
       max-width: 300px;
     }
   }
+
+  /* Scroll Animations */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .fade-in.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .slide-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .slide-in-left.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .slide-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .slide-in-right.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .scale-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease-out;
+  }
+
+  .scale-in.animate {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Stagger animation delays */
+  .value-card:nth-child(1) { transition-delay: 0.1s; }
+  .value-card:nth-child(2) { transition-delay: 0.2s; }
+  .value-card:nth-child(3) { transition-delay: 0.3s; }
+
+  .timeline__item:nth-child(odd) { transition-delay: 0.1s; }
+  .timeline__item:nth-child(even) { transition-delay: 0.3s; }
 </style>
+
+<script>
+  // Intersection Observer for scroll animations
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -100px 0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      }
+    });
+  }, observerOptions);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Add animation classes to elements
+    document.querySelector('.hero__content')?.classList.add('fade-in');
+    
+    // Mission section
+    document.querySelector('.mission__text')?.classList.add('slide-in-left');
+    document.querySelector('.mission__image')?.classList.add('slide-in-right');
+    
+    // Values section
+    document.querySelector('.values h2')?.classList.add('fade-in');
+    document.querySelectorAll('.value-card').forEach(card => {
+      card.classList.add('scale-in');
+    });
+
+    // Timeline section
+    document.querySelector('.timeline h2')?.classList.add('fade-in');
+    document.querySelectorAll('.timeline__item').forEach(item => {
+      item.classList.add('slide-in-left');
+    });
+
+    // CTA section
+    document.querySelector('.cta')?.classList.add('fade-in');
+
+    // Observe all animated elements
+    document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Trigger hero animation immediately
+    setTimeout(() => {
+      document.querySelector('.hero__content')?.classList.add('animate');
+    }, 300);
+  });
+</script>
