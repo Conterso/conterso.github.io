@@ -1,0 +1,18 @@
+/* Main CSS file - imports all styles */
+
+/* Variables and base styles */
+@import './variables.css';
+@import './base.css';
+
+/* Component styles */
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/hero.css';
+@import './components/product-card.css';
+@import './components/pricing-card.css';
+
+/* Page-specific styles */
+@import './pages/home.css';
+@import './pages/about.css';
+@import './pages/products.css';
+@import './pages/contact.css';

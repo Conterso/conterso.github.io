@@ -1,0 +1,55 @@
+---
+export interface Props {
+  title: string;
+  subtitle: string;
+  primaryAction?: {
+    text: string;
+    href: string;
+  };
+  secondaryAction?: {
+    text: string;
+    href: string;
+  };
+  imageSrc?: string;
+  imageAlt?: string;
+}
+
+const { 
+  title, 
+  subtitle, 
+  primaryAction, 
+  secondaryAction, 
+  imageSrc, 
+  imageAlt 
+} = Astro.props;
+---
+
+<section class="hero">
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__text">
+        <h1 class="hero__title">{title}</h1>
+        <p class="hero__subtitle">{subtitle}</p>
+        {(primaryAction || secondaryAction) && (
+          <div class="hero__actions">
+            {primaryAction && (
+              <a href={primaryAction.href} class="btn btn--primary">
+                {primaryAction.text}
+              </a>
+            )}
+            {secondaryAction && (
+              <a href={secondaryAction.href} class="btn btn--secondary">
+                {secondaryAction.text}
+              </a>
+            )}
+          </div>
+        )}
+      </div>
+      {imageSrc && (
+        <div class="hero__image">
+          <img src={imageSrc} alt={imageAlt || title} class="hero__image-element" />
+        </div>
+      )}
+    </div>
+  </div>
+</section>

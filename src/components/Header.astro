@@ -3,236 +3,49 @@
 ---
 
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <div class="nav__brand">
-        <a href="/" class="nav__logo">
-          <img src="/images/logos/conterso-wordmark.svg" alt="Conterso" class="nav__logo-image" />
-        </a>
-      </div>
-      
-      <ul class="nav__menu">
-        <li class="nav__item">
-          <a href="/" class="nav__link">Home</a>
+  <div class="header__container">
+    <a href="/" class="header__logo">
+      <img src="/images/logos/conterso-wordmark.svg" alt="Conterso" />
+    </a>
+    
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="/" class="header__nav-link">Home</a>
         </li>
-        <li class="nav__item">
-          <a href="/about" class="nav__link">About</a>
+        <li class="header__nav-item">
+          <a href="/about" class="header__nav-link">About</a>
         </li>
-        <li class="nav__item dropdown">
-          <a href="/products" class="nav__link">Products</a>
-          <ul class="dropdown__menu">
-            <li><a href="/products/doors" class="dropdown__link">Doors</a></li>
-            <li><a href="/products/work" class="dropdown__link">Work</a></li>
-            <li><a href="/products/sounder" class="dropdown__link">Sounder</a></li>
-            <li><a href="/products/mider" class="dropdown__link">Mider</a></li>
-          </ul>
+        <li class="header__nav-item header__dropdown">
+          <div class="header__dropdown-toggle">
+            <a href="/products" class="header__nav-link">Products</a>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="header__dropdown-menu">
+            <a href="/products/doors" class="header__dropdown-item">Doors</a>
+            <a href="/products/work" class="header__dropdown-item">Work</a>
+            <a href="/products/sounder" class="header__dropdown-item">Sounder</a>
+            <a href="/products/mider" class="header__dropdown-item">Mider</a>
+          </div>
         </li>
-        <li class="nav__item">
-          <a href="/contact" class="nav__link nav__link--cta">Contact</a>
+        <li class="header__nav-item">
+          <a href="/contact" class="header__nav-link">Contact</a>
         </li>
       </ul>
-
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </nav>
+
+    <button class="header__mobile-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
   </div>
 </header>
-
-<style>
-  .header {
-    background-color: var(--color-background);
-    border-bottom: 1px solid var(--color-border);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-  }
-
-  .nav__brand {
-    flex-shrink: 0;
-  }
-
-  .nav__logo {
-    font-family: var(--font-display);
-    font-size: 2rem;
-    font-weight: 400;
-    color: var(--color-primary);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-  }
-
-  .nav__logo-image {
-    height: 40px;
-    width: auto;
-    max-width: 200px;
-  }
-
-  .nav__logo:hover {
-    text-decoration: none;
-  }
-
-  .nav__menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 2rem;
-  }
-
-  .nav__item {
-    position: relative;
-  }
-
-  .nav__link {
-    color: var(--color-secondary);
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    transition: all 0.2s ease;
-  }
-
-  .nav__link:hover {
-    color: var(--color-primary);
-    background-color: var(--color-background-light);
-    text-decoration: none;
-  }
-
-  .nav__link--cta {
-    background-color: var(--color-accent);
-    color: white;
-  }
-
-  .nav__link--cta:hover {
-    background-color: #0052a3;
-    color: white;
-  }
-
-  .dropdown {
-    position: relative;
-  }
-
-  .dropdown__menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: var(--color-background);
-    border: 1px solid var(--color-border);
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.2s ease;
-    min-width: 200px;
-    list-style: none;
-    padding: 0.5rem 0;
-  }
-
-  .dropdown:hover .dropdown__menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-
-  .dropdown__link {
-    display: block;
-    padding: 0.75rem 1rem;
-    color: var(--color-secondary);
-    text-decoration: none;
-    transition: all 0.2s ease;
-  }
-
-  .dropdown__link:hover {
-    background-color: var(--color-background-light);
-    color: var(--color-primary);
-  }
-
-  .nav__toggle {
-    display: none;
-    flex-direction: column;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-  }
-
-  .nav__toggle span {
-    width: 25px;
-    height: 3px;
-    background-color: var(--color-primary);
-    margin: 3px 0;
-    transition: 0.3s;
-    border-radius: 2px;
-  }
-
-  @media (max-width: 768px) {
-    .nav__menu {
-      position: fixed;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: var(--color-background);
-      border-top: 1px solid var(--color-border);
-      flex-direction: column;
-      align-items: stretch;
-      padding: 1rem 0;
-      transform: translateY(-100vh);
-      transition: transform 0.3s ease;
-      gap: 0;
-    }
-
-    .nav__menu.active {
-      transform: translateY(0);
-    }
-
-    .nav__item {
-      border-bottom: 1px solid var(--color-border);
-    }
-
-    .nav__item:last-child {
-      border-bottom: none;
-    }
-
-    .nav__link {
-      display: block;
-      padding: 1rem 2rem;
-      border-radius: 0;
-    }
-
-    .nav__toggle {
-      display: flex;
-    }
-
-    .dropdown__menu {
-      position: static;
-      opacity: 1;
-      visibility: visible;
-      transform: none;
-      box-shadow: none;
-      border: none;
-      background-color: var(--color-background-light);
-      margin-top: 0;
-    }
-
-    .dropdown__link {
-      padding-left: 3rem;
-    }
-  }
-</style>
 
 <script>
   // Mobile navigation toggle
   const navToggle = document.getElementById('nav-toggle');
-  const navMenu = document.querySelector('.nav__menu');
+  const navMenu = document.querySelector('.header__nav');
 
   if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {

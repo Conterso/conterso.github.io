@@ -1,0 +1,30 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  href: string;
+  imageSrc?: string;
+  icon?: string; // SVG string for icon
+}
+
+const { title, description, href, imageSrc, icon } = Astro.props;
+---
+
+<div class="product-card">
+  <div class="product-card__content">
+    {imageSrc ? (
+      <div class="product-card__image">
+        <img src={imageSrc} alt={title} />
+      </div>
+    ) : icon && (
+      <div class="product-card__icon" set:html={icon}></div>
+    )}
+    
+    <h3 class="product-card__title">{title}</h3>
+    <p class="product-card__description">{description}</p>
+    
+    <a href={href} class="product-card__link">
+      Learn More →
+    </a>
+  </div>
+</div>
