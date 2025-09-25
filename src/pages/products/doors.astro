@@ -173,6 +173,104 @@ import Footer from '../../components/Footer.astro';
       </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section class="pricing">
+      <div class="container">
+        <h2 class="section__title">Choose Your Plan</h2>
+        <div class="pricing__grid">
+          <div class="pricing__card">
+            <h3 class="pricing__title">Standard</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">10</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Basic OS installation</li>
+              <li>Standard security features</li>
+              <li>Email support</li>
+              <li>Community updates</li>
+              <li>1 year support</li>
+            </ul>
+            <a href="/contact" class="btn btn--secondary">Get Started</a>
+          </div>
+
+          <div class="pricing__card">
+            <h3 class="pricing__title">Plus</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">15</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Enhanced OS features</li>
+              <li>Advanced security suite</li>
+              <li>Priority support</li>
+              <li>Quarterly updates</li>
+              <li>Virtualization tools</li>
+            </ul>
+            <a href="/contact" class="btn btn--secondary">Choose Plus</a>
+          </div>
+
+          <div class="pricing__card pricing__card--featured">
+            <div class="pricing__badge">Most Popular</div>
+            <h3 class="pricing__title">Pro</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">20</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Full enterprise OS</li>
+              <li>Complete security package</li>
+              <li>24/7 support</li>
+              <li>Monthly updates</li>
+              <li>Management console</li>
+              <li>API access</li>
+            </ul>
+            <a href="/contact" class="btn btn--primary">Choose Pro</a>
+          </div>
+
+          <div class="pricing__card">
+            <h3 class="pricing__title">Premium</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">25</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Premium enterprise features</li>
+              <li>Advanced threat protection</li>
+              <li>Dedicated support team</li>
+              <li>Real-time updates</li>
+              <li>Custom configurations</li>
+              <li>SLA guarantees</li>
+            </ul>
+            <a href="/contact" class="btn btn--secondary">Contact Sales</a>
+          </div>
+
+          <div class="pricing__card">
+            <h3 class="pricing__title">Max</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">30</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Maximum enterprise suite</li>
+              <li>Ultimate security package</li>
+              <li>White-glove support</li>
+              <li>Continuous updates</li>
+              <li>Full customization</li>
+              <li>Enterprise SLA</li>
+              <li>On-site support</li>
+            </ul>
+            <a href="/contact" class="btn btn--secondary">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta">
       <div class="container">
@@ -326,6 +424,105 @@ import Footer from '../../components/Footer.astro';
     color: var(--color-primary);
   }
 
+  /* Pricing Section */
+  .pricing {
+    padding: 6rem 0;
+  }
+
+  .pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .pricing__card {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .pricing__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing__card--featured {
+    border-color: var(--color-accent);
+    transform: scale(1.05);
+  }
+
+  .pricing__card--featured:hover {
+    transform: scale(1.05) translateY(-4px);
+  }
+
+  .pricing__badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .pricing__title {
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .pricing__price {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .pricing__currency {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+  }
+
+  .pricing__amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .pricing__period {
+    color: var(--color-secondary);
+  }
+
+  .pricing__features {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .pricing__features li {
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .pricing__features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+  }
+
   /* CTA Section */
   .cta {
     background-color: var(--color-primary);
@@ -434,7 +631,7 @@ import Footer from '../../components/Footer.astro';
       text-align: center;
     }
 
-    .features, .specs, .cta {
+    .features, .specs, .pricing, .cta {
       padding: 4rem 0;
     }
 
@@ -444,6 +641,18 @@ import Footer from '../../components/Footer.astro';
 
     .specs__content {
       grid-template-columns: 1fr;
+    }
+
+    .pricing__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing__card--featured {
+      transform: none;
+    }
+
+    .pricing__card--featured:hover {
+      transform: translateY(-4px);
     }
 
     .cta__actions {
