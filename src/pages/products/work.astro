@@ -1,0 +1,685 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout title="Work - Office Software Bundle | Conterso">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge">Office Software Bundle</div>
+          <h1 class="hero__title">Work</h1>
+          <p class="hero__subtitle">
+            The comprehensive office productivity suite that transforms how teams collaborate, 
+            create, and communicate in the modern workplace.
+          </p>
+          <div class="hero__actions">
+            <a href="/contact" class="btn btn--primary">Start Free Trial</a>
+            <a href="#features" class="btn btn--secondary">Explore Features</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="applications">
+      <div class="container">
+        <h2 class="section__title">Complete Office Suite</h2>
+        <div class="applications__grid">
+          <div class="application">
+            <div class="application__icon">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
+                <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2"/>
+                <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2"/>
+                <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2"/>
+                <polyline points="10,9 9,9 8,9" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="application__title">Work Documents</h3>
+            <p class="application__description">
+              Professional document creation with advanced formatting, collaboration tools, 
+              and seamless integration with enterprise systems.
+            </p>
+            <ul class="application__features">
+              <li>Real-time collaboration</li>
+              <li>Advanced formatting options</li>
+              <li>Version control & tracking</li>
+              <li>Template library</li>
+            </ul>
+          </div>
+
+          <div class="application">
+            <div class="application__icon">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="9" y1="9" x2="15" y2="9" stroke="currentColor" stroke-width="2"/>
+                <line x1="9" y1="15" x2="15" y2="15" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="3" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="application__title">Work Sheets</h3>
+            <p class="application__description">
+              Powerful spreadsheet application with advanced analytics, data visualization, 
+              and automated reporting capabilities.
+            </p>
+            <ul class="application__features">
+              <li>Advanced formulas & functions</li>
+              <li>Data visualization tools</li>
+              <li>Pivot tables & analysis</li>
+              <li>Automated reporting</li>
+            </ul>
+          </div>
+
+          <div class="application">
+            <div class="application__icon">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                <circle cx="8" cy="9" r="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M18 8.5V10l-2.5-2.5L13 10v1.5l2.5 2.5L18 11.5V13" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="application__title">Work Presentations</h3>
+            <p class="application__description">
+              Create compelling presentations with professional templates, animations, 
+              and multimedia integration for impactful storytelling.
+            </p>
+            <ul class="application__features">
+              <li>Professional templates</li>
+              <li>Animation & transitions</li>
+              <li>Multimedia support</li>
+              <li>Presenter tools</li>
+            </ul>
+          </div>
+
+          <div class="application">
+            <div class="application__icon">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                <path d="M21.5 2v6h-6M2.5 22v-6h6M16 1.5l4 4-4 4M8 14.5l-4 4 4 4" stroke="currentColor" stroke-width="2"/>
+                <line x1="21" y1="2" x2="11" y2="12" stroke="currentColor" stroke-width="2"/>
+                <line x1="21" y1="13" x2="11" y2="23" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="application__title">Work Flow</h3>
+            <p class="application__description">
+              Project management and workflow automation tools to streamline processes 
+              and improve team productivity across the organization.
+            </p>
+            <ul class="application__features">
+              <li>Project management</li>
+              <li>Workflow automation</li>
+              <li>Team collaboration</li>
+              <li>Resource planning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section__title">Why Choose Work?</h2>
+        <div class="features__grid">
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2"/>
+                <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Seamless Collaboration</h3>
+            <p class="feature__description">
+              Real-time editing, commenting, and sharing features that keep teams connected 
+              and productive, whether working remotely or in the office.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="2"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke="currentColor" stroke-width="2"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Enterprise Integration</h3>
+            <p class="feature__description">
+              Native integration with enterprise systems including CRM, ERP, and 
+              directory services for streamlined workflows and data consistency.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Enterprise Security</h3>
+            <p class="feature__description">
+              Advanced security features including document encryption, access controls, 
+              and compliance tools to protect sensitive business information.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">AI-Powered Features</h3>
+            <p class="feature__description">
+              Intelligent writing assistance, data insights, and automated formatting 
+              help users work smarter and produce higher-quality outputs.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Cross-Platform</h3>
+            <p class="feature__description">
+              Works seamlessly across desktop, web, and mobile platforms, ensuring 
+              productivity wherever your team needs to work.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Scalable Deployment</h3>
+            <p class="feature__description">
+              Flexible deployment options including cloud, on-premises, and hybrid 
+              configurations to meet your organization's specific requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+      <div class="container">
+        <h2 class="section__title">Choose Your Plan</h2>
+        <div class="pricing__grid">
+          <div class="pricing__card">
+            <h3 class="pricing__title">Standard</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">10</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Core office applications</li>
+              <li>5GB cloud storage per user</li>
+              <li>Basic collaboration tools</li>
+              <li>Email support</li>
+              <li>Standard templates</li>
+            </ul>
+            <a href="/contact" class="btn btn--secondary">Get Started</a>
+          </div>
+
+          <div class="pricing__card pricing__card--featured">
+            <div class="pricing__badge">Most Popular</div>
+            <h3 class="pricing__title">Pro</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">20</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Full office suite</li>
+              <li>50GB cloud storage per user</li>
+              <li>Advanced collaboration</li>
+              <li>Priority support</li>
+              <li>Premium templates</li>
+              <li>Basic analytics</li>
+            </ul>
+            <a href="/contact" class="btn btn--primary">Choose Pro</a>
+          </div>
+
+          <div class="pricing__card">
+            <h3 class="pricing__title">Premium</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">30</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Complete Work suite</li>
+              <li>Unlimited cloud storage</li>
+              <li>Enterprise security</li>
+              <li>24/7 dedicated support</li>
+              <li>Custom integrations</li>
+              <li>Advanced analytics</li>
+              <li>Custom deployment</li>
+            </ul>
+            <a href="/contact" class="btn btn--secondary">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__content">
+          <h2 class="cta__title">Transform Your Workplace Today</h2>
+          <p class="cta__description">
+            Join thousands of organizations that have revolutionized their productivity with Work. 
+            Start your free trial and experience the difference.
+          </p>
+          <div class="cta__actions">
+            <a href="/contact" class="btn btn--primary btn--large">Start Free Trial</a>
+            <a href="/products" class="btn btn--secondary-light">View All Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--color-background-light) 0%, var(--color-background) 100%);
+    padding: 8rem 0 6rem;
+  }
+
+  .hero__content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero__badge {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .hero__subtitle {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Applications Section */
+  .applications {
+    padding: 6rem 0;
+  }
+
+  .section__title {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--color-primary);
+  }
+
+  .applications__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .application {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .application:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .application__icon {
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .application__title {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .application__description {
+    color: var(--color-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .application__features {
+    list-style: none;
+    text-align: left;
+  }
+
+  .application__features li {
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .application__features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+  }
+
+  /* Features Section */
+  .features {
+    background-color: var(--color-background-light);
+    padding: 6rem 0;
+  }
+
+  .features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .feature {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .feature__icon {
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .feature__title {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .feature__description {
+    color: var(--color-secondary);
+    line-height: 1.6;
+  }
+
+  /* Pricing Section */
+  .pricing {
+    padding: 6rem 0;
+  }
+
+  .pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .pricing__card {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .pricing__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing__card--featured {
+    border-color: var(--color-accent);
+    transform: scale(1.05);
+  }
+
+  .pricing__card--featured:hover {
+    transform: scale(1.05) translateY(-4px);
+  }
+
+  .pricing__badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .pricing__title {
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .pricing__price {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .pricing__currency {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+  }
+
+  .pricing__amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .pricing__period {
+    color: var(--color-secondary);
+  }
+
+  .pricing__features {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .pricing__features li {
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .pricing__features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+  }
+
+  /* CTA Section */
+  .cta {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 6rem 0;
+  }
+
+  .cta__content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta__title {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .cta__description {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+  }
+
+  .cta__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid;
+    font-size: 1rem;
+  }
+
+  .btn--primary {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+
+  .btn--primary:hover {
+    background-color: #0052a3;
+    border-color: #0052a3;
+    text-decoration: none;
+  }
+
+  .btn--secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-border);
+  }
+
+  .btn--secondary:hover {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .btn--secondary-light {
+    background-color: transparent;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .btn--secondary-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+    text-decoration: none;
+  }
+
+  .btn--large {
+    padding: 1.125rem 2.5rem;
+    font-size: 1.125rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 6rem 0 4rem;
+    }
+
+    .hero__title {
+      font-size: 2.5rem;
+    }
+
+    .hero__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .applications, .features, .pricing, .cta {
+      padding: 4rem 0;
+    }
+
+    .applications__grid, .features__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing__card--featured {
+      transform: none;
+    }
+
+    .pricing__card--featured:hover {
+      transform: translateY(-4px);
+    }
+
+    .cta__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

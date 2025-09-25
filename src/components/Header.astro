@@ -1,0 +1,55 @@
+---
+// Header component for site navigation
+---
+
+<header class="header">
+  <div class="header__container">
+    <a href="/" class="header__logo">
+      <img src="/images/logos/conterso-wordmark.svg" alt="Conterso" />
+    </a>
+    
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="/" class="header__nav-link">Home</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="/about" class="header__nav-link">About</a>
+        </li>
+        <li class="header__nav-item header__dropdown">
+          <div class="header__dropdown-toggle">
+            <a href="/products" class="header__nav-link">Products</a>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="header__dropdown-menu">
+            <a href="/products/doors" class="header__dropdown-item">Doors</a>
+            <a href="/products/work" class="header__dropdown-item">Work</a>
+            <a href="/products/sounder" class="header__dropdown-item">Sounder</a>
+            <a href="/products/mider" class="header__dropdown-item">Mider</a>
+          </div>
+        </li>
+        <li class="header__nav-item">
+          <a href="/contact" class="header__nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="header__mobile-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+  </div>
+</header>
+
+<script>
+  // Mobile navigation toggle
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.querySelector('.header__nav');
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  }
+</script>

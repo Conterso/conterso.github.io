@@ -1,0 +1,288 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Contact Us - Conterso">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">Contact Us</h1>
+          <p class="hero__subtitle">
+            Ready to transform your business with Conterso solutions? 
+            Get in touch with our team today.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact__content">
+          <div class="contact__info">
+            <h2>Get in Touch</h2>
+            <p>
+              Whether you're interested in our products, need technical support, 
+              or want to explore partnership opportunities, we're here to help.
+            </p>
+            
+            <div class="contact__methods">
+              <div class="contact__method">
+                <div class="contact__method-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
+                    <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Email</h3>
+                  <p>contact@conterso.com</p>
+                </div>
+              </div>
+
+              <div class="contact__method">
+                <div class="contact__method-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+
+              <div class="contact__method">
+                <div class="contact__method-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Address</h3>
+                  <p>123 Innovation Drive<br/>Tech City, TC 12345</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form">
+            <form class="form">
+              <div class="form__group">
+                <label for="name" class="form__label">Name</label>
+                <input type="text" id="name" name="name" class="form__input" required>
+              </div>
+
+              <div class="form__group">
+                <label for="email" class="form__label">Email</label>
+                <input type="email" id="email" name="email" class="form__input" required>
+              </div>
+
+              <div class="form__group">
+                <label for="company" class="form__label">Company</label>
+                <input type="text" id="company" name="company" class="form__input">
+              </div>
+
+              <div class="form__group">
+                <label for="subject" class="form__label">Subject</label>
+                <select id="subject" name="subject" class="form__select" required>
+                  <option value="">Select a topic</option>
+                  <option value="sales">Sales Inquiry</option>
+                  <option value="support">Technical Support</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label for="message" class="form__label">Message</label>
+                <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--color-background-light) 0%, var(--color-background) 100%);
+    padding: 6rem 0 4rem;
+  }
+
+  .hero__content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero__title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .hero__subtitle {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    line-height: 1.6;
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 6rem 0;
+  }
+
+  .contact__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .contact__info h2 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .contact__info p {
+    color: var(--color-secondary);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+  }
+
+  .contact__methods {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact__method {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .contact__method-icon {
+    color: var(--color-accent);
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+  }
+
+  .contact__method h3 {
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+    font-size: 1.125rem;
+  }
+
+  .contact__method p {
+    color: var(--color-secondary);
+    margin: 0;
+  }
+
+  /* Form Styles */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .form__group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__label {
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+
+  .form__input,
+  .form__select,
+  .form__textarea {
+    padding: 0.875rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+  }
+
+  .form__input:focus,
+  .form__select:focus,
+  .form__textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+  }
+
+  .form__textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  /* Button */
+  .btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid;
+    font-size: 1rem;
+    cursor: pointer;
+    background: none;
+    font-family: var(--font-body);
+  }
+
+  .btn--primary {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+
+  .btn--primary:hover {
+    background-color: #0052a3;
+    border-color: #0052a3;
+    text-decoration: none;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 4rem 0 3rem;
+    }
+
+    .hero__title {
+      font-size: 2.5rem;
+    }
+
+    .contact {
+      padding: 4rem 0;
+    }
+
+    .contact__content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .contact__methods {
+      gap: 1.5rem;
+    }
+  }
+</style>

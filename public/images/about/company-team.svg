@@ -1,0 +1,32 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Company team image - 800x500 -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Office environment -->
+  <rect x="50" y="100" width="700" height="300" fill="#e5e5e5" rx="8"/>
+  
+  <!-- Team members (simplified) -->
+  <circle cx="150" cy="200" r="30" fill="#0066cc" opacity="0.3"/>
+  <circle cx="250" cy="180" r="30" fill="#0066cc" opacity="0.4"/>
+  <circle cx="350" cy="220" r="30" fill="#0066cc" opacity="0.3"/>
+  <circle cx="450" cy="190" r="30" fill="#0066cc" opacity="0.5"/>
+  <circle cx="550" cy="210" r="30" fill="#0066cc" opacity="0.3"/>
+  <circle cx="650" cy="185" r="30" fill="#0066cc" opacity="0.4"/>
+  
+  <!-- Connecting lines showing collaboration -->
+  <line x1="180" y1="200" x2="220" y2="180" stroke="#0066cc" stroke-width="2" opacity="0.3"/>
+  <line x1="280" y1="180" x2="320" y2="220" stroke="#0066cc" stroke-width="2" opacity="0.3"/>
+  <line x1="380" y1="220" x2="420" y2="190" stroke="#0066cc" stroke-width="2" opacity="0.3"/>
+  <line x1="480" y1="190" x2="520" y2="210" stroke="#0066cc" stroke-width="2" opacity="0.3"/>
+  <line x1="580" y1="210" x2="620" y2="185" stroke="#0066cc" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Office furniture -->
+  <rect x="100" y="320" width="80" height="40" fill="#ddd" rx="4"/>
+  <rect x="220" y="320" width="80" height="40" fill="#ddd" rx="4"/>
+  <rect x="340" y="320" width="80" height="40" fill="#ddd" rx="4"/>
+  <rect x="460" y="320" width="80" height="40" fill="#ddd" rx="4"/>
+  <rect x="580" y="320" width="80" height="40" fill="#ddd" rx="4"/>
+  
+  <text x="400" y="460" text-anchor="middle" fill="#666" font-family="Outfit, sans-serif" font-size="16">Our Team</text>
+  <text x="400" y="485" text-anchor="middle" fill="#666" font-family="Outfit, sans-serif" font-size="12">800 × 500 Company Team</text>
+</svg>

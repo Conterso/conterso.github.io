@@ -1,0 +1,721 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout title="Sounder - Music Production Software | Conterso">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge">Music Production</div>
+          <h1 class="hero__title">Sounder</h1>
+          <p class="hero__subtitle">
+            Professional music creation and production software that empowers artists, 
+            producers, and sound engineers to bring their creative vision to life.
+          </p>
+          <div class="hero__actions">
+            <a href="/contact" class="btn btn--primary">Download Trial</a>
+            <a href="#features" class="btn btn--secondary">Explore Features</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section__title">Professional Music Production Tools</h2>
+        <div class="features__grid">
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 6v12M16 6v12" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Multi-Track Recording</h3>
+            <p class="feature__description">
+              Record unlimited audio and MIDI tracks with pristine quality. 
+              Advanced editing tools and non-destructive workflow keep your creativity flowing.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M20.188 10.934a6.5 6.5 0 0 0-1.188-1.934M3.812 13.066a6.5 6.5 0 0 0 1.188 1.934" stroke="currentColor" stroke-width="2"/>
+                <path d="M14.828 14.828a4 4 0 0 1-5.656 0M9.172 9.172a4 4 0 0 1 5.656 0" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Advanced Audio Effects</h3>
+            <p class="feature__description">
+              Professional-grade effects library including EQ, compression, reverb, 
+              delay, and creative processors to shape your perfect sound.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                <circle cx="8" cy="9" r="2" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Virtual Instruments</h3>
+            <p class="feature__description">
+              Comprehensive collection of synthesizers, samplers, and acoustic 
+              instrument emulations for any musical genre or style.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="2"/>
+                <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">MIDI Sequencing</h3>
+            <p class="feature__description">
+              Powerful MIDI editor with piano roll, drum editor, and score view. 
+              Real-time MIDI effects and advanced automation capabilities.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <polygon points="11 5,6 9,2 9,2 15,6 15,11 19,11 5" stroke="currentColor" stroke-width="2"/>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14" stroke="currentColor" stroke-width="2"/>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Professional Mixing</h3>
+            <p class="feature__description">
+              Advanced mixing console with automation, sends, and professional 
+              metering. Export in any format with customizable quality settings.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="2"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke="currentColor" stroke-width="2"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Plugin Integration</h3>
+            <p class="feature__description">
+              Full support for VST, AU, and AAX plugins. Seamlessly integrate 
+              your favorite third-party instruments and effects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases">
+      <div class="container">
+        <h2 class="section__title">Perfect For Every Creator</h2>
+        <div class="use-cases__grid">
+          <div class="use-case">
+            <h3 class="use-case__title">Music Producers</h3>
+            <p class="use-case__description">
+              Create professional tracks with industry-standard tools and workflows. 
+              From hip-hop beats to orchestral arrangements, Sounder handles it all.
+            </p>
+            <ul class="use-case__features">
+              <li>Professional sample libraries</li>
+              <li>Advanced beat matching</li>
+              <li>Collaboration tools</li>
+              <li>Export to all formats</li>
+            </ul>
+          </div>
+
+          <div class="use-case">
+            <h3 class="use-case__title">Recording Artists</h3>
+            <p class="use-case__description">
+              Record, edit, and produce your music with studio-quality results. 
+              Perfect for solo artists, bands, and recording sessions.
+            </p>
+            <ul class="use-case__features">
+              <li>Multi-channel recording</li>
+              <li>Real-time monitoring</li>
+              <li>Pitch correction</li>
+              <li>Vocal processing</li>
+            </ul>
+          </div>
+
+          <div class="use-case">
+            <h3 class="use-case__title">Sound Engineers</h3>
+            <p class="use-case__description">
+              Professional mixing and mastering tools with precise control over 
+              every aspect of your audio production workflow.
+            </p>
+            <ul class="use-case__features">
+              <li>Professional metering</li>
+              <li>Advanced routing</li>
+              <li>Mastering suite</li>
+              <li>Surround sound support</li>
+            </ul>
+          </div>
+
+          <div class="use-case">
+            <h3 class="use-case__title">Composers</h3>
+            <p class="use-case__description">
+              Compose and arrange music for film, games, and media with 
+              comprehensive scoring tools and orchestral libraries.
+            </p>
+            <ul class="use-case__features">
+              <li>Notation and scoring</li>
+              <li>Orchestral samples</li>
+              <li>MIDI orchestration</li>
+              <li>Sync to video</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- System Requirements -->
+    <section class="requirements">
+      <div class="container">
+        <h2 class="section__title">System Requirements</h2>
+        <div class="requirements__content">
+          <div class="requirements__category">
+            <h3 class="requirements__title">Minimum Requirements</h3>
+            <ul class="requirements__list">
+              <li><strong>OS:</strong> Windows 10/11, macOS 10.15+, Ubuntu 20.04+</li>
+              <li><strong>CPU:</strong> Intel i5 / AMD Ryzen 5 or equivalent</li>
+              <li><strong>RAM:</strong> 8GB (16GB recommended)</li>
+              <li><strong>Storage:</strong> 8GB free space + content libraries</li>
+              <li><strong>Audio:</strong> ASIO compatible audio interface</li>
+            </ul>
+          </div>
+
+          <div class="requirements__category">
+            <h3 class="requirements__title">Recommended Setup</h3>
+            <ul class="requirements__list">
+              <li><strong>OS:</strong> Latest versions with regular updates</li>
+              <li><strong>CPU:</strong> Intel i7 / AMD Ryzen 7 or better</li>
+              <li><strong>RAM:</strong> 32GB for large projects</li>
+              <li><strong>Storage:</strong> SSD with 100GB+ free space</li>
+              <li><strong>Audio:</strong> Professional audio interface with low latency</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+      <div class="container">
+        <h2 class="section__title">Choose Your Plan</h2>
+        <div class="pricing__grid">
+          <div class="pricing__card">
+            <h3 class="pricing__title">Plus</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">20</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Multi-track recording</li>
+              <li>Basic audio effects</li>
+              <li>Virtual instruments</li>
+              <li>Email support</li>
+              <li>Standard sample library</li>
+            </ul>
+            <a href="/contact" class="btn btn--secondary">Get Started</a>
+          </div>
+
+          <div class="pricing__card pricing__card--featured">
+            <div class="pricing__badge">Most Popular</div>
+            <h3 class="pricing__title">Pro</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">30</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Advanced recording features</li>
+              <li>Professional audio effects</li>
+              <li>Complete virtual studio</li>
+              <li>Priority support</li>
+              <li>Premium sample library</li>
+              <li>MIDI sequencing</li>
+            </ul>
+            <a href="/contact" class="btn btn--primary">Choose Pro</a>
+          </div>
+
+          <div class="pricing__card">
+            <h3 class="pricing__title">Premium</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">40</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Complete music production suite</li>
+              <li>Advanced mixing & mastering</li>
+              <li>Unlimited virtual instruments</li>
+              <li>24/7 dedicated support</li>
+              <li>Exclusive sample libraries</li>
+              <li>Professional collaboration tools</li>
+              <li>Custom plugin integration</li>
+            </ul>
+            <a href="/contact" class="btn btn--secondary">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__content">
+          <h2 class="cta__title">Start Creating Today</h2>
+          <p class="cta__description">
+            Download your free trial of Sounder and discover why artists and producers 
+            worldwide choose our platform for their music creation needs.
+          </p>
+          <div class="cta__actions">
+            <a href="/contact" class="btn btn--primary btn--large">Download Free Trial</a>
+            <a href="/products" class="btn btn--secondary-light">View All Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--color-background-light) 0%, var(--color-background) 100%);
+    padding: 8rem 0 6rem;
+  }
+
+  .hero__content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero__badge {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .hero__subtitle {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Features Section */
+  .features {
+    padding: 6rem 0;
+  }
+
+  .section__title {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--color-primary);
+  }
+
+  .features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .feature {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .feature__icon {
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .feature__title {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .feature__description {
+    color: var(--color-secondary);
+    line-height: 1.6;
+  }
+
+  /* Use Cases Section */
+  .use-cases {
+    background-color: var(--color-background-light);
+    padding: 6rem 0;
+  }
+
+  .use-cases__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .use-case {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .use-case:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .use-case__title {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .use-case__description {
+    color: var(--color-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .use-case__features {
+    list-style: none;
+  }
+
+  .use-case__features li {
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .use-case__features li::before {
+    content: '♪';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+  }
+
+  /* Requirements Section */
+  .requirements {
+    padding: 6rem 0;
+  }
+
+  .requirements__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .requirements__category {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2.5rem;
+  }
+
+  .requirements__title {
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    font-size: 1.25rem;
+  }
+
+  .requirements__list {
+    list-style: none;
+  }
+
+  .requirements__list li {
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .requirements__list strong {
+    color: var(--color-primary);
+  }
+
+  /* Pricing Section */
+  .pricing {
+    padding: 6rem 0;
+  }
+
+  .pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .pricing__card {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .pricing__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing__card--featured {
+    border-color: var(--color-accent);
+    transform: scale(1.05);
+  }
+
+  .pricing__card--featured:hover {
+    transform: scale(1.05) translateY(-4px);
+  }
+
+  .pricing__badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .pricing__title {
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .pricing__price {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .pricing__currency {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+  }
+
+  .pricing__amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .pricing__period {
+    color: var(--color-secondary);
+  }
+
+  .pricing__features {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .pricing__features li {
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .pricing__features li::before {
+    content: '♪';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+  }
+
+  /* CTA Section */
+  .cta {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 6rem 0;
+  }
+
+  .cta__content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta__title {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .cta__description {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+  }
+
+  .cta__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid;
+    font-size: 1rem;
+  }
+
+  .btn--primary {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+
+  .btn--primary:hover {
+    background-color: #0052a3;
+    border-color: #0052a3;
+    text-decoration: none;
+  }
+
+  .btn--secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-border);
+  }
+
+  .btn--secondary:hover {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .btn--secondary-light {
+    background-color: transparent;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .btn--secondary-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+    text-decoration: none;
+  }
+
+  .btn--large {
+    padding: 1.125rem 2.5rem;
+    font-size: 1.125rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 6rem 0 4rem;
+    }
+
+    .hero__title {
+      font-size: 2.5rem;
+    }
+
+    .hero__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .features, .use-cases, .requirements, .pricing, .cta {
+      padding: 4rem 0;
+    }
+
+    .features__grid, .use-cases__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .requirements__content {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing__card--featured {
+      transform: none;
+    }
+
+    .pricing__card--featured:hover {
+      transform: translateY(-4px);
+    }
+
+    .cta__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

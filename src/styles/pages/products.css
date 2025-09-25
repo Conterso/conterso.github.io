@@ -1,0 +1,119 @@
+/* Products Page Styles */
+.product-overview {
+  background-color: var(--color-bg-secondary);
+}
+
+.product-overview__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+}
+
+.product-detail {
+  padding: var(--space-20) 0;
+}
+
+.product-detail__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+  margin-bottom: var(--space-16);
+}
+
+.product-detail__text {
+  max-width: 500px;
+}
+
+.product-detail__image {
+  text-align: center;
+}
+
+.product-detail__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-6) 0;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  color: var(--color-text-secondary);
+}
+
+.features-list svg {
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+.pricing-section {
+  background-color: var(--color-bg-secondary);
+  padding: var(--space-20) 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+}
+
+.specifications {
+  background-color: var(--color-bg-tertiary);
+}
+
+.specifications__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+.spec-item {
+  background-color: var(--color-bg-primary);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-light);
+}
+
+.spec-item__label {
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.spec-item__value {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .product-overview__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .product-detail__content {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+    text-align: center;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .specifications__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,16 @@
+<svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- About page mission image - 500x400 -->
+  <rect width="500" height="400" fill="#f8f9fa"/>
+  <rect x="50" y="50" width="400" height="300" fill="#e5e5e5" rx="8"/>
+  
+  <!-- Mission illustration -->
+  <circle cx="250" cy="150" r="60" stroke="#0066cc" stroke-width="3" fill="none"/>
+  <polygon points="250,120 270,180 230,180" fill="#0066cc" opacity="0.3"/>
+  
+  <!-- Target rings -->
+  <circle cx="250" cy="150" r="40" stroke="#0066cc" stroke-width="2" fill="none" opacity="0.4"/>
+  <circle cx="250" cy="150" r="20" stroke="#0066cc" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <text x="250" y="280" text-anchor="middle" fill="#666" font-family="Outfit, sans-serif" font-size="18" font-weight="600">Our Mission</text>
+  <text x="250" y="370" text-anchor="middle" fill="#666" font-family="Outfit, sans-serif" font-size="12">500 × 400 Company Mission</text>
+</svg>

@@ -1,0 +1,52 @@
+---
+export interface Props {
+  tier: string;
+  price: string;
+  features: string[];
+  popular?: boolean;
+  buttonText?: string;
+  buttonHref?: string;
+}
+
+const { 
+  tier, 
+  price, 
+  features, 
+  popular = false, 
+  buttonText = "Get Started", 
+  buttonHref = "/contact" 
+} = Astro.props;
+---
+
+<div class={`pricing-card ${popular ? 'pricing-card--popular' : ''}`}>
+  {popular && <div class="pricing-card__badge">Most Popular</div>}
+  
+  <div class="pricing-card__header">
+    <h3 class="pricing-card__tier">{tier}</h3>
+    <div class="pricing-card__price">
+      <span class="pricing-card__currency">£</span>
+      <span class="pricing-card__amount">{price}</span>
+      <span class="pricing-card__period">/month</span>
+    </div>
+  </div>
+  
+  <div class="pricing-card__features">
+    <ul>
+      {features.map(feature => (
+        <li class="pricing-card__feature">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          {feature}
+        </li>
+      ))}
+    </ul>
+  </div>
+  
+  <div class="pricing-card__action">
+    <a href={buttonHref} class={`btn ${popular ? 'btn--primary' : 'btn--secondary'} pricing-card__button`}>
+      {buttonText}
+    </a>
+  </div>
+</div>

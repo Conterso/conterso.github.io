@@ -1,0 +1,38 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sounder Music Production image - 600x400 -->
+  <rect width="600" height="400" fill="#1a1a1a"/>
+  
+  <!-- Music interface mockup -->
+  <rect x="50" y="50" width="500" height="300" fill="#2a2a2a" rx="8"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="500" height="40" fill="#333" rx="8 8 0 0"/>
+  <text x="300" y="75" text-anchor="middle" fill="#0066cc" font-family="Outfit, sans-serif" font-size="14">Sounder - Music Production</text>
+  
+  <!-- Track lanes -->
+  <rect x="70" y="110" width="460" height="40" fill="#333" rx="4"/>
+  <rect x="80" y="120" width="150" height="8" fill="#0066cc" opacity="0.8" rx="2"/>
+  <rect x="250" y="120" width="100" height="8" fill="#0066cc" opacity="0.6" rx="2"/>
+  <text x="85" y="140" fill="#ccc" font-family="Outfit, sans-serif" font-size="10">Track 1 - Lead Guitar</text>
+  
+  <rect x="70" y="160" width="460" height="40" fill="#333" rx="4"/>
+  <rect x="80" y="170" width="200" height="8" fill="#28ca42" opacity="0.8" rx="2"/>
+  <text x="85" y="190" fill="#ccc" font-family="Outfit, sans-serif" font-size="10">Track 2 - Bass</text>
+  
+  <rect x="70" y="210" width="460" height="40" fill="#333" rx="4"/>
+  <rect x="80" y="220" width="300" height="8" fill="#ff5f57" opacity="0.8" rx="2"/>
+  <text x="85" y="240" fill="#ccc" font-family="Outfit, sans-serif" font-size="10">Track 3 - Drums</text>
+  
+  <!-- Waveform visualization -->
+  <rect x="70" y="270" width="460" height="60" fill="#222" rx="4"/>
+  <!-- Waveform bars -->
+  <rect x="90" y="285" width="2" height="30" fill="#0066cc" opacity="0.6"/>
+  <rect x="95" y="290" width="2" height="20" fill="#0066cc" opacity="0.8"/>
+  <rect x="100" y="275" width="2" height="40" fill="#0066cc"/>
+  <rect x="105" y="280" width="2" height="30" fill="#0066cc" opacity="0.7"/>
+  <rect x="110" y="285" width="2" height="20" fill="#0066cc" opacity="0.5"/>
+  <rect x="115" y="290" width="2" height="15" fill="#0066cc" opacity="0.6"/>
+  <rect x="120" y="285" width="2" height="25" fill="#0066cc" opacity="0.8"/>
+  
+  <text x="300" y="380" text-anchor="middle" fill="#666" font-family="Outfit, sans-serif" font-size="12">600 × 400 Sounder Music Production</text>
+</svg>
