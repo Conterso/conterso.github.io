@@ -1,0 +1,503 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="About Conterso - Our Story & Mission">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">About Conterso</h1>
+          <p class="hero__subtitle">
+            Pioneering the future of enterprise technology through innovation, 
+            excellence, and unwavering commitment to our clients' success.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+      <div class="container">
+        <div class="mission__content">
+          <div class="mission__text">
+            <h2 class="section__title">Our Mission</h2>
+            <p class="mission__description">
+              At Conterso, we believe that technology should empower businesses to achieve their greatest potential. 
+              Our mission is to create innovative software solutions that streamline operations, enhance productivity, 
+              and drive digital transformation across industries.
+            </p>
+            <p class="mission__description">
+              Founded on the principles of excellence, integrity, and innovation, we are committed to delivering 
+              enterprise-grade solutions that meet the evolving needs of modern businesses.
+            </p>
+          </div>
+          <div class="mission__image">
+            <div class="placeholder-image">
+              <svg width="100%" height="300" viewBox="0 0 400 300" fill="none">
+                <rect width="400" height="300" fill="var(--color-background-light)"/>
+                <path d="M200 120L240 180L160 180Z" fill="var(--color-accent)" opacity="0.3"/>
+                <circle cx="200" cy="150" r="60" stroke="var(--color-accent)" stroke-width="2" fill="none"/>
+                <text x="200" y="220" text-anchor="middle" fill="var(--color-secondary)" font-size="14">Our Vision</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+      <div class="container">
+        <h2 class="section__title">Our Core Values</h2>
+        <div class="values__grid">
+          <div class="value-card">
+            <div class="value-card__icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="value-card__title">Innovation</h3>
+            <p class="value-card__description">
+              We constantly push boundaries and explore new possibilities to create groundbreaking solutions 
+              that shape the future of enterprise technology.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-card__icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="value-card__title">Security</h3>
+            <p class="value-card__description">
+              Security is paramount in everything we build. Our solutions are designed with enterprise-grade 
+              security measures to protect your most valuable assets.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-card__icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2"/>
+                <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="value-card__title">Collaboration</h3>
+            <p class="value-card__description">
+              We believe in the power of teamwork and collaboration, both within our organization 
+              and with our clients to achieve exceptional results.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-card__icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="value-card__title">Performance</h3>
+            <p class="value-card__description">
+              We are committed to delivering high-performance solutions that exceed expectations 
+              and provide measurable value to our clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history">
+      <div class="container">
+        <h2 class="section__title">Our Journey</h2>
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__year">2018</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Company Founded</h3>
+              <p class="timeline__description">
+                Conterso was established with a vision to revolutionize enterprise software solutions.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__year">2019</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">First Product Launch</h3>
+              <p class="timeline__description">
+                Launched Doors, our flagship operating system designed for enterprise environments.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__year">2020</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Product Suite Expansion</h3>
+              <p class="timeline__description">
+                Introduced Work, our comprehensive office software bundle, expanding our product offerings.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__year">2022</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Creative Solutions</h3>
+              <p class="timeline__description">
+                Launched Sounder and Mider, bringing professional creative tools to our portfolio.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__year">2024</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Global Expansion</h3>
+              <p class="timeline__description">
+                Expanded our reach globally, serving enterprises across multiple continents.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__content">
+          <h2 class="cta__title">Join Our Journey</h2>
+          <p class="cta__description">
+            Be part of the future of enterprise technology. Discover how Conterso can transform your business.
+          </p>
+          <div class="cta__actions">
+            <a href="/products" class="btn btn--primary">Explore Products</a>
+            <a href="/contact" class="btn btn--secondary-light">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--color-background-light) 0%, var(--color-background) 100%);
+    padding: 6rem 0 4rem;
+  }
+
+  .hero__content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .hero__title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .hero__subtitle {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    line-height: 1.6;
+  }
+
+  /* Mission Section */
+  .mission {
+    padding: 6rem 0;
+  }
+
+  .mission__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .section__title {
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+  }
+
+  .mission__description {
+    color: var(--color-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .mission__image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .placeholder-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+  }
+
+  /* Values Section */
+  .values {
+    background-color: var(--color-background-light);
+    padding: 6rem 0;
+  }
+
+  .values .section__title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .values__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .value-card {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .value-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .value-card__icon {
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .value-card__title {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .value-card__description {
+    color: var(--color-secondary);
+    line-height: 1.6;
+  }
+
+  /* History Section */
+  .history {
+    padding: 6rem 0;
+  }
+
+  .history .section__title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--color-border);
+    transform: translateX(-50%);
+  }
+
+  .timeline__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+
+  .timeline__item:nth-child(odd) {
+    flex-direction: row;
+  }
+
+  .timeline__item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .timeline__year {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.125rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .timeline__content {
+    flex: 1;
+    padding: 0 2rem;
+  }
+
+  .timeline__item:nth-child(odd) .timeline__content {
+    text-align: right;
+  }
+
+  .timeline__item:nth-child(even) .timeline__content {
+    text-align: left;
+  }
+
+  .timeline__title {
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+  }
+
+  .timeline__description {
+    color: var(--color-secondary);
+    line-height: 1.6;
+  }
+
+  /* CTA Section */
+  .cta {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 6rem 0;
+  }
+
+  .cta__content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta__title {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .cta__description {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+  }
+
+  .cta__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid;
+    font-size: 1rem;
+  }
+
+  .btn--primary {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+
+  .btn--primary:hover {
+    background-color: #0052a3;
+    border-color: #0052a3;
+    text-decoration: none;
+  }
+
+  .btn--secondary-light {
+    background-color: transparent;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .btn--secondary-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+    text-decoration: none;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 4rem 0 3rem;
+    }
+
+    .hero__title {
+      font-size: 2.5rem;
+    }
+
+    .mission {
+      padding: 4rem 0;
+    }
+
+    .mission__content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .values, .history, .cta {
+      padding: 4rem 0;
+    }
+
+    .timeline::before {
+      left: 40px;
+    }
+
+    .timeline__item {
+      flex-direction: row !important;
+      padding-left: 100px;
+    }
+
+    .timeline__year {
+      position: absolute;
+      left: 0;
+    }
+
+    .timeline__content {
+      text-align: left !important;
+      padding: 0;
+    }
+
+    .cta__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+</style>

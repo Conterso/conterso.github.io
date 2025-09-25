@@ -1,0 +1,576 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout title="Doors - Enterprise Operating System | Conterso">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge">Operating System</div>
+          <h1 class="hero__title">Doors</h1>
+          <p class="hero__subtitle">
+            The next-generation enterprise operating system designed for mission-critical 
+            environments with uncompromising security and performance.
+          </p>
+          <div class="hero__actions">
+            <a href="/contact" class="btn btn--primary">Request Demo</a>
+            <a href="#features" class="btn btn--secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="os-mockup">
+            <div class="os-mockup__header">
+              <div class="os-mockup__controls">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="os-mockup__title">Doors Enterprise</div>
+            </div>
+            <div class="os-mockup__content">
+              <div class="os-mockup__sidebar">
+                <div class="os-mockup__menu-item active">Dashboard</div>
+                <div class="os-mockup__menu-item">Applications</div>
+                <div class="os-mockup__menu-item">Security</div>
+                <div class="os-mockup__menu-item">Performance</div>
+              </div>
+              <div class="os-mockup__main">
+                <div class="os-mockup__cards">
+                  <div class="os-mockup__card"></div>
+                  <div class="os-mockup__card"></div>
+                  <div class="os-mockup__card"></div>
+                  <div class="os-mockup__card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section__title">Enterprise-Grade Features</h2>
+        <div class="features__grid">
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Advanced Security</h3>
+            <p class="feature__description">
+              Multi-layered security architecture with hardware-level encryption, 
+              secure boot, and real-time threat detection.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">High Performance</h3>
+            <p class="feature__description">
+              Optimized kernel with advanced memory management and process scheduling 
+              for maximum system throughput and responsiveness.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Virtualization Ready</h3>
+            <p class="feature__description">
+              Built-in hypervisor technology with support for containers, 
+              virtual machines, and hybrid cloud deployments.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Management Tools</h3>
+            <p class="feature__description">
+              Comprehensive administration suite with centralized configuration, 
+              monitoring, and automated deployment capabilities.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2"/>
+                <polyline points="7.5,4.21 12,6.81 16.5,4.21" stroke="currentColor" stroke-width="2"/>
+                <polyline points="7.5,19.79 7.5,14.6 3,12" stroke="currentColor" stroke-width="2"/>
+                <polyline points="21,12 16.5,14.6 16.5,19.79" stroke="currentColor" stroke-width="2"/>
+                <polyline points="12,22.81 12,17" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Scalable Architecture</h3>
+            <p class="feature__description">
+              Designed to scale from single workstations to massive data centers 
+              with consistent performance and reliability.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="2"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke="currentColor" stroke-width="2"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">API Integration</h3>
+            <p class="feature__description">
+              Rich APIs and development frameworks for seamless integration 
+              with existing enterprise applications and workflows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specs -->
+    <section class="specs">
+      <div class="container">
+        <h2 class="section__title">Technical Specifications</h2>
+        <div class="specs__content">
+          <div class="specs__category">
+            <h3 class="specs__category-title">System Requirements</h3>
+            <ul class="specs__list">
+              <li><strong>CPU:</strong> 64-bit multi-core processor (4+ cores recommended)</li>
+              <li><strong>RAM:</strong> 8GB minimum, 16GB+ recommended</li>
+              <li><strong>Storage:</strong> 100GB available space (SSD recommended)</li>
+              <li><strong>Network:</strong> Gigabit Ethernet adapter</li>
+            </ul>
+          </div>
+
+          <div class="specs__category">
+            <h3 class="specs__category-title">Security Features</h3>
+            <ul class="specs__list">
+              <li><strong>Encryption:</strong> AES-256 hardware acceleration</li>
+              <li><strong>Authentication:</strong> Multi-factor authentication (MFA)</li>
+              <li><strong>Access Control:</strong> Role-based permissions (RBAC)</li>
+              <li><strong>Compliance:</strong> FIPS 140-2, Common Criteria EAL4+</li>
+            </ul>
+          </div>
+
+          <div class="specs__category">
+            <h3 class="specs__category-title">Platform Support</h3>
+            <ul class="specs__list">
+              <li><strong>Architecture:</strong> x86-64, ARM64</li>
+              <li><strong>Virtualization:</strong> VMware, Hyper-V, KVM</li>
+              <li><strong>Cloud:</strong> AWS, Azure, Google Cloud Platform</li>
+              <li><strong>Containers:</strong> Docker, Kubernetes native support</li>
+            </ul>
+          </div>
+
+          <div class="specs__category">
+            <h3 class="specs__category-title">Management & Monitoring</h3>
+            <ul class="specs__list">
+              <li><strong>Console:</strong> Web-based administration interface</li>
+              <li><strong>API:</strong> RESTful APIs with OpenAPI specification</li>
+              <li><strong>Monitoring:</strong> Real-time performance metrics</li>
+              <li><strong>Logging:</strong> Centralized audit and event logging</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__content">
+          <h2 class="cta__title">Experience Doors in Action</h2>
+          <p class="cta__description">
+            See how Doors can transform your enterprise infrastructure. 
+            Schedule a personalized demonstration with our technical team.
+          </p>
+          <div class="cta__actions">
+            <a href="/contact" class="btn btn--primary btn--large">Schedule Demo</a>
+            <a href="/products" class="btn btn--secondary-light">View All Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--color-background-light) 0%, var(--color-background) 100%);
+    padding: 6rem 0;
+  }
+
+  .hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .hero__badge {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .hero__subtitle {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* OS Mockup */
+  .os-mockup {
+    background-color: #1a1a1a;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .os-mockup__header {
+    background-color: #2a2a2a;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .os-mockup__controls {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .os-mockup__controls span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #666;
+  }
+
+  .os-mockup__controls span:nth-child(1) {
+    background-color: #ff5f57;
+  }
+
+  .os-mockup__controls span:nth-child(2) {
+    background-color: #ffbd2e;
+  }
+
+  .os-mockup__controls span:nth-child(3) {
+    background-color: #28ca42;
+  }
+
+  .os-mockup__title {
+    color: #ccc;
+    font-weight: 600;
+  }
+
+  .os-mockup__content {
+    display: flex;
+    height: 300px;
+  }
+
+  .os-mockup__sidebar {
+    width: 200px;
+    background-color: #2a2a2a;
+    padding: 1.5rem 0;
+  }
+
+  .os-mockup__menu-item {
+    padding: 0.75rem 1.5rem;
+    color: #999;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+  }
+
+  .os-mockup__menu-item.active {
+    color: var(--color-accent);
+    background-color: rgba(0, 102, 204, 0.1);
+    border-left-color: var(--color-accent);
+  }
+
+  .os-mockup__main {
+    flex: 1;
+    padding: 1.5rem;
+  }
+
+  .os-mockup__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    height: 100%;
+  }
+
+  .os-mockup__card {
+    background-color: #333;
+    border-radius: 0.5rem;
+    border: 1px solid #444;
+  }
+
+  /* Features Section */
+  .features {
+    padding: 6rem 0;
+  }
+
+  .section__title {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--color-primary);
+  }
+
+  .features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .feature {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .feature__icon {
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .feature__title {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .feature__description {
+    color: var(--color-secondary);
+    line-height: 1.6;
+  }
+
+  /* Specs Section */
+  .specs {
+    background-color: var(--color-background-light);
+    padding: 6rem 0;
+  }
+
+  .specs__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+  }
+
+  .specs__category {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  .specs__category-title {
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    font-size: 1.25rem;
+  }
+
+  .specs__list {
+    list-style: none;
+  }
+
+  .specs__list li {
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .specs__list strong {
+    color: var(--color-primary);
+  }
+
+  /* CTA Section */
+  .cta {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 6rem 0;
+  }
+
+  .cta__content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta__title {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .cta__description {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+  }
+
+  .cta__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid;
+    font-size: 1rem;
+  }
+
+  .btn--primary {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+
+  .btn--primary:hover {
+    background-color: #0052a3;
+    border-color: #0052a3;
+    text-decoration: none;
+  }
+
+  .btn--secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-border);
+  }
+
+  .btn--secondary:hover {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .btn--secondary-light {
+    background-color: transparent;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .btn--secondary-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+    text-decoration: none;
+  }
+
+  .btn--large {
+    padding: 1.125rem 2.5rem;
+    font-size: 1.125rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 4rem 0;
+    }
+
+    .hero .container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .hero__title {
+      font-size: 2.5rem;
+    }
+
+    .hero__actions {
+      flex-direction: column;
+    }
+
+    .btn {
+      text-align: center;
+    }
+
+    .os-mockup__content {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .os-mockup__sidebar {
+      width: 100%;
+    }
+
+    .os-mockup__cards {
+      grid-template-columns: 1fr;
+    }
+
+    .features, .specs, .cta {
+      padding: 4rem 0;
+    }
+
+    .features__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .specs__content {
+      grid-template-columns: 1fr;
+    }
+
+    .cta__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+</style>

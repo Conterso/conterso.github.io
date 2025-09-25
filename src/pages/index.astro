@@ -1,0 +1,374 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Conterso - Innovative Technology Solutions">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">Innovation at the Core of Enterprise</h1>
+          <p class="hero__subtitle">
+            Conterso delivers cutting-edge technology solutions that transform how businesses operate, 
+            communicate, and create in the digital age.
+          </p>
+          <div class="hero__actions">
+            <a href="/products" class="btn btn--primary">Explore Products</a>
+            <a href="/about" class="btn btn--secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Overview -->
+    <section class="products">
+      <div class="container">
+        <h2 class="section__title">Our Product Suite</h2>
+        <p class="section__subtitle">
+          Comprehensive solutions designed for the modern enterprise
+        </p>
+        
+        <div class="products__grid">
+          <div class="product-card">
+            <div class="product-card__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Doors</h3>
+            <p class="product-card__description">
+              A revolutionary operating system designed for enterprise environments with 
+              unparalleled security and performance.
+            </p>
+            <a href="/products/doors" class="product-card__link">Learn More →</a>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Work</h3>
+            <p class="product-card__description">
+              Complete office software bundle that streamlines productivity and enhances 
+              collaboration across your organization.
+            </p>
+            <a href="/products/work" class="product-card__link">Learn More →</a>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="11 5,6 9,2 9,2 15,6 15,11 19,11 5" stroke="currentColor" stroke-width="2"/>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14" stroke="currentColor" stroke-width="2"/>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Sounder</h3>
+            <p class="product-card__description">
+              Professional music creation and production software with advanced features 
+              for artists and sound engineers.
+            </p>
+            <a href="/products/sounder" class="product-card__link">Learn More →</a>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2"/>
+                <path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="product-card__title">Mider</h3>
+            <p class="product-card__description">
+              Comprehensive video and photo editing suite with cutting-edge tools for 
+              content creators and media professionals.
+            </p>
+            <a href="/products/mider" class="product-card__link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Values -->
+    <section class="values">
+      <div class="container">
+        <h2 class="section__title">Why Choose Conterso</h2>
+        <div class="values__grid">
+          <div class="value-item">
+            <h3 class="value-item__title">Innovation First</h3>
+            <p class="value-item__description">
+              We pioneer cutting-edge solutions that push the boundaries of what's possible 
+              in enterprise technology.
+            </p>
+          </div>
+          <div class="value-item">
+            <h3 class="value-item__title">Enterprise Grade</h3>
+            <p class="value-item__description">
+              All our products are built with enterprise-level security, scalability, 
+              and reliability at their foundation.
+            </p>
+          </div>
+          <div class="value-item">
+            <h3 class="value-item__title">Seamless Integration</h3>
+            <p class="value-item__description">
+              Our solutions work together harmoniously, creating a unified ecosystem 
+              that enhances productivity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__content">
+          <h2 class="cta__title">Ready to Transform Your Business?</h2>
+          <p class="cta__description">
+            Join thousands of enterprises that trust Conterso to power their digital transformation.
+          </p>
+          <a href="/contact" class="btn btn--primary btn--large">Get Started Today</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--color-background-light) 0%, var(--color-background) 100%);
+    padding: 8rem 0 6rem;
+  }
+
+  .hero__content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .hero__subtitle {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid;
+    font-size: 1rem;
+  }
+
+  .btn--primary {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+
+  .btn--primary:hover {
+    background-color: #0052a3;
+    border-color: #0052a3;
+    text-decoration: none;
+  }
+
+  .btn--secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-border);
+  }
+
+  .btn--secondary:hover {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .btn--large {
+    padding: 1.125rem 2.5rem;
+    font-size: 1.125rem;
+  }
+
+  /* Sections */
+  .products, .values {
+    padding: 6rem 0;
+  }
+
+  .section__title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .section__subtitle {
+    text-align: center;
+    color: var(--color-secondary);
+    margin-bottom: 4rem;
+    font-size: 1.25rem;
+  }
+
+  /* Products Grid */
+  .products__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .product-card {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-card__icon {
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-card__title {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .product-card__description {
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .product-card__link {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .product-card__link:hover {
+    text-decoration: underline;
+  }
+
+  /* Values Section */
+  .values {
+    background-color: var(--color-background-light);
+  }
+
+  .values__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+  }
+
+  .value-item {
+    text-align: center;
+  }
+
+  .value-item__title {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .value-item__description {
+    color: var(--color-secondary);
+    line-height: 1.6;
+  }
+
+  /* CTA Section */
+  .cta {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 6rem 0;
+  }
+
+  .cta__content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta__title {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .cta__description {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 6rem 0 4rem;
+    }
+
+    .hero__title {
+      font-size: 2.5rem;
+    }
+
+    .hero__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .products, .values, .cta {
+      padding: 4rem 0;
+    }
+
+    .products__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .values__grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+</style>
