@@ -1,0 +1,18 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hero image placeholder - 800x500 -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  <rect x="100" y="100" width="600" height="300" fill="#e5e5e5" rx="12"/>
+  
+  <!-- Abstract enterprise illustration -->
+  <circle cx="200" cy="200" r="40" fill="#0066cc" opacity="0.2"/>
+  <circle cx="350" cy="250" r="35" fill="#0066cc" opacity="0.3"/>
+  <circle cx="500" cy="200" r="45" fill="#0066cc" opacity="0.2"/>
+  <circle cx="600" cy="300" r="30" fill="#0066cc" opacity="0.4"/>
+  
+  <!-- Connecting lines -->
+  <line x1="200" y1="200" x2="350" y2="250" stroke="#0066cc" stroke-width="2" opacity="0.3"/>
+  <line x1="350" y1="250" x2="500" y2="200" stroke="#0066cc" stroke-width="2" opacity="0.3"/>
+  <line x1="500" y1="200" x2="600" y2="300" stroke="#0066cc" stroke-width="2" opacity="0.3"/>
+  
+  <text x="400" y="450" text-anchor="middle" fill="#666" font-family="Outfit, sans-serif" font-size="14">800 × 500 Hero Image - Enterprise Solutions</text>
+</svg>

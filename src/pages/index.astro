@@ -12,14 +12,19 @@ import Footer from '../components/Footer.astro';
     <section class="hero">
       <div class="container">
         <div class="hero__content">
-          <h1 class="hero__title">Innovation at the Core of Enterprise</h1>
-          <p class="hero__subtitle">
-            Conterso delivers cutting-edge technology solutions that transform how businesses operate, 
-            communicate, and create in the digital age.
-          </p>
-          <div class="hero__actions">
-            <a href="/products" class="btn btn--primary">Explore Products</a>
-            <a href="/about" class="btn btn--secondary">Learn More</a>
+          <div class="hero__text">
+            <h1 class="hero__title">Innovation at the Core of Enterprise</h1>
+            <p class="hero__subtitle">
+              Conterso delivers cutting-edge technology solutions that transform how businesses operate, 
+              communicate, and create in the digital age.
+            </p>
+            <div class="hero__actions">
+              <a href="/products" class="btn btn--primary">Explore Products</a>
+              <a href="/about" class="btn btn--secondary">Learn More</a>
+            </div>
+          </div>
+          <div class="hero__image">
+            <img src="/images/hero/enterprise-solutions.svg" alt="Enterprise Solutions" class="hero__image-element" />
           </div>
         </div>
       </div>
@@ -155,9 +160,27 @@ import Footer from '../components/Footer.astro';
   }
 
   .hero__content {
-    text-align: center;
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .hero__text {
+    text-align: left;
+  }
+
+  .hero__image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero__image-element {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
   }
 
   .hero__title {
@@ -176,7 +199,7 @@ import Footer from '../components/Footer.astro';
   .hero__actions {
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
@@ -344,6 +367,15 @@ import Footer from '../components/Footer.astro';
       padding: 6rem 0 4rem;
     }
 
+    .hero__content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .hero__text {
+      text-align: center;
+    }
+
     .hero__title {
       font-size: 2.5rem;
     }
@@ -351,6 +383,7 @@ import Footer from '../components/Footer.astro';
     .hero__actions {
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
 
     .btn {

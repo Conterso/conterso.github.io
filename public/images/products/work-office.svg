@@ -1,0 +1,36 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Work Office Suite image - 600x400 -->
+  <rect width="600" height="400" fill="#f8f9fa"/>
+  
+  <!-- Office interface mockup -->
+  <rect x="50" y="50" width="500" height="300" fill="white" rx="8" stroke="#e5e5e5"/>
+  
+  <!-- Document window -->
+  <rect x="50" y="50" width="500" height="40" fill="#0066cc" rx="8 8 0 0"/>
+  <text x="300" y="75" text-anchor="middle" fill="white" font-family="Outfit, sans-serif" font-size="14">Work - Document Editor</text>
+  
+  <!-- Toolbar -->
+  <rect x="50" y="90" width="500" height="30" fill="#f5f5f5"/>
+  <rect x="70" y="100" width="20" height="10" fill="#ddd" rx="2"/>
+  <rect x="100" y="100" width="20" height="10" fill="#ddd" rx="2"/>
+  <rect x="130" y="100" width="20" height="10" fill="#ddd" rx="2"/>
+  <rect x="160" y="100" width="20" height="10" fill="#0066cc" rx="2"/>
+  
+  <!-- Document content area -->
+  <rect x="70" y="140" width="460" height="180" fill="white" stroke="#e5e5e5"/>
+  
+  <!-- Text lines -->
+  <rect x="90" y="160" width="200" height="8" fill="#0066cc" opacity="0.3" rx="2"/>
+  <rect x="90" y="180" width="350" height="6" fill="#ddd" rx="2"/>
+  <rect x="90" y="195" width="320" height="6" fill="#ddd" rx="2"/>
+  <rect x="90" y="210" width="280" height="6" fill="#ddd" rx="2"/>
+  
+  <!-- Chart/graph area -->
+  <rect x="90" y="240" width="180" height="60" fill="#f8f9fa"/>
+  <rect x="100" y="280" width="15" height="15" fill="#0066cc" opacity="0.6"/>
+  <rect x="120" y="270" width="15" height="25" fill="#0066cc" opacity="0.4"/>
+  <rect x="140" y="260" width="15" height="35" fill="#0066cc" opacity="0.8"/>
+  <rect x="160" y="275" width="15" height="20" fill="#0066cc" opacity="0.5"/>
+  
+  <text x="300" y="380" text-anchor="middle" fill="#666" font-family="Outfit, sans-serif" font-size="12">600 × 400 Work Office Suite</text>
+</svg>

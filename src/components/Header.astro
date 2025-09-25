@@ -7,7 +7,7 @@
     <nav class="nav">
       <div class="nav__brand">
         <a href="/" class="nav__logo">
-          <span class="nav__logo-text">Conterso</span>
+          <img src="/images/logos/conterso-wordmark.svg" alt="Conterso" class="nav__logo-image" />
         </a>
       </div>
       
@@ -67,6 +67,14 @@
     font-weight: 400;
     color: var(--color-primary);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__logo-image {
+    height: 40px;
+    width: auto;
+    max-width: 200px;
   }
 
   .nav__logo:hover {

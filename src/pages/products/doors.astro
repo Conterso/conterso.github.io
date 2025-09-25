@@ -24,32 +24,7 @@ import Footer from '../../components/Footer.astro';
           </div>
         </div>
         <div class="hero__visual">
-          <div class="os-mockup">
-            <div class="os-mockup__header">
-              <div class="os-mockup__controls">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="os-mockup__title">Doors Enterprise</div>
-            </div>
-            <div class="os-mockup__content">
-              <div class="os-mockup__sidebar">
-                <div class="os-mockup__menu-item active">Dashboard</div>
-                <div class="os-mockup__menu-item">Applications</div>
-                <div class="os-mockup__menu-item">Security</div>
-                <div class="os-mockup__menu-item">Performance</div>
-              </div>
-              <div class="os-mockup__main">
-                <div class="os-mockup__cards">
-                  <div class="os-mockup__card"></div>
-                  <div class="os-mockup__card"></div>
-                  <div class="os-mockup__card"></div>
-                  <div class="os-mockup__card"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <img src="/images/products/doors-os.svg" alt="Doors Operating System Interface" class="hero__image" />
         </div>
       </div>
     </section>
@@ -265,91 +240,12 @@ import Footer from '../../components/Footer.astro';
     flex-wrap: wrap;
   }
 
-  /* OS Mockup */
-  .os-mockup {
-    background-color: #1a1a1a;
+  /* Hero Image */
+  .hero__image {
+    width: 100%;
+    height: auto;
     border-radius: 1rem;
-    overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  }
-
-  .os-mockup__header {
-    background-color: #2a2a2a;
-    padding: 1rem 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .os-mockup__controls {
-    display: flex;
-    gap: 0.5rem;
-  }
-
-  .os-mockup__controls span {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #666;
-  }
-
-  .os-mockup__controls span:nth-child(1) {
-    background-color: #ff5f57;
-  }
-
-  .os-mockup__controls span:nth-child(2) {
-    background-color: #ffbd2e;
-  }
-
-  .os-mockup__controls span:nth-child(3) {
-    background-color: #28ca42;
-  }
-
-  .os-mockup__title {
-    color: #ccc;
-    font-weight: 600;
-  }
-
-  .os-mockup__content {
-    display: flex;
-    height: 300px;
-  }
-
-  .os-mockup__sidebar {
-    width: 200px;
-    background-color: #2a2a2a;
-    padding: 1.5rem 0;
-  }
-
-  .os-mockup__menu-item {
-    padding: 0.75rem 1.5rem;
-    color: #999;
-    cursor: pointer;
-    border-left: 3px solid transparent;
-  }
-
-  .os-mockup__menu-item.active {
-    color: var(--color-accent);
-    background-color: rgba(0, 102, 204, 0.1);
-    border-left-color: var(--color-accent);
-  }
-
-  .os-mockup__main {
-    flex: 1;
-    padding: 1.5rem;
-  }
-
-  .os-mockup__cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    height: 100%;
-  }
-
-  .os-mockup__card {
-    background-color: #333;
-    border-radius: 0.5rem;
-    border: 1px solid #444;
   }
 
   /* Features Section */
@@ -536,19 +432,6 @@ import Footer from '../../components/Footer.astro';
 
     .btn {
       text-align: center;
-    }
-
-    .os-mockup__content {
-      flex-direction: column;
-      height: auto;
-    }
-
-    .os-mockup__sidebar {
-      width: 100%;
-    }
-
-    .os-mockup__cards {
-      grid-template-columns: 1fr;
     }
 
     .features, .specs, .cta {

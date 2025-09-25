@@ -1,0 +1,28 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Team collaboration image - 600x400 -->
+  <rect width="600" height="400" fill="#f8f9fa"/>
+  
+  <!-- Meeting room setup -->
+  <rect x="50" y="100" width="500" height="250" fill="#e5e5e5" rx="12"/>
+  
+  <!-- Conference table -->
+  <ellipse cx="300" cy="225" rx="120" ry="60" fill="#ddd"/>
+  
+  <!-- People around table (simplified) -->
+  <circle cx="220" cy="180" r="20" fill="#0066cc" opacity="0.3"/>
+  <circle cx="380" cy="180" r="20" fill="#0066cc" opacity="0.4"/>
+  <circle cx="250" cy="270" r="20" fill="#0066cc" opacity="0.3"/>
+  <circle cx="350" cy="270" r="20" fill="#0066cc" opacity="0.5"/>
+  
+  <!-- Presentation screen -->
+  <rect x="400" y="120" width="120" height="80" fill="#333" rx="4"/>
+  <rect x="410" y="130" width="100" height="60" fill="#0066cc" opacity="0.2"/>
+  
+  <!-- Charts on screen -->
+  <rect x="420" y="140" width="15" height="20" fill="#0066cc" opacity="0.6"/>
+  <rect x="440" y="145" width="15" height="15" fill="#0066cc" opacity="0.8"/>
+  <rect x="460" y="135" width="15" height="25" fill="#0066cc"/>
+  <rect x="480" y="150" width="15" height="10" fill="#0066cc" opacity="0.7"/>
+  
+  <text x="300" y="380" text-anchor="middle" fill="#666" font-family="Outfit, sans-serif" font-size="14">600 × 400 Team Collaboration</text>
+</svg>
