@@ -23,6 +23,9 @@ import Footer from '../../components/Footer.astro';
             <a href="#features" class="btn btn--secondary">Explore Features</a>
           </div>
         </div>
+        <div class="hero__visual">
+          <img src="/images/products/work-office.svg" alt="Work Office Suite" class="hero__image" />
+        </div>
       </div>
     </section>
 
@@ -228,7 +231,7 @@ import Footer from '../../components/Footer.astro';
             <h3 class="pricing__title">Standard</h3>
             <div class="pricing__price">
               <span class="pricing__currency">£</span>
-              <span class="pricing__amount">10</span>
+              <span class="pricing__amount">15</span>
               <span class="pricing__period">/user/month</span>
             </div>
             <ul class="pricing__features">
@@ -246,7 +249,7 @@ import Footer from '../../components/Footer.astro';
             <h3 class="pricing__title">Pro</h3>
             <div class="pricing__price">
               <span class="pricing__currency">£</span>
-              <span class="pricing__amount">20</span>
+              <span class="pricing__amount">25</span>
               <span class="pricing__period">/user/month</span>
             </div>
             <ul class="pricing__features">
@@ -264,7 +267,7 @@ import Footer from '../../components/Footer.astro';
             <h3 class="pricing__title">Premium</h3>
             <div class="pricing__price">
               <span class="pricing__currency">£</span>
-              <span class="pricing__amount">30</span>
+              <span class="pricing__amount">35</span>
               <span class="pricing__period">/user/month</span>
             </div>
             <ul class="pricing__features">
@@ -310,10 +313,15 @@ import Footer from '../../components/Footer.astro';
     padding: 8rem 0 6rem;
   }
 
+  .hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
   .hero__content {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 600px;
   }
 
   .hero__badge {
@@ -345,8 +353,21 @@ import Footer from '../../components/Footer.astro';
   .hero__actions {
     display: flex;
     gap: 1rem;
-    justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .hero__visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   }
 
   /* Applications Section */
@@ -640,6 +661,12 @@ import Footer from '../../components/Footer.astro';
   @media (max-width: 768px) {
     .hero {
       padding: 6rem 0 4rem;
+    }
+
+    .hero .container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
     }
 
     .hero__title {

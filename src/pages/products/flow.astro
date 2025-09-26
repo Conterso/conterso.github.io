@@ -4,7 +4,7 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 ---
 
-<BaseLayout title="Mider - Video & Photo Editing Suite | Conterso">
+<BaseLayout title="Flow - Project Management Platform | Conterso">
   <Header />
   
   <main>
@@ -12,55 +12,102 @@ import Footer from '../../components/Footer.astro';
     <section class="hero">
       <div class="container">
         <div class="hero__content">
-          <div class="hero__badge">Video & Photo Editing</div>
-          <h1 class="hero__title">Mider</h1>
+          <div class="hero__badge">Project Management</div>
+          <h1 class="hero__title">Flow</h1>
           <p class="hero__subtitle">
-            Comprehensive video and photo editing suite that empowers content creators, 
-            media professionals, and marketing teams to produce stunning visual content.
+            Intuitive project management platform that streamlines workflows, enhances team 
+            collaboration, and delivers projects on time with powerful planning and tracking tools.
           </p>
           <div class="hero__actions">
             <a href="/contact" class="btn btn--primary">Start Free Trial</a>
-            <a href="#features" class="btn btn--secondary">See Features</a>
+            <a href="#features" class="btn btn--secondary">Explore Features</a>
           </div>
         </div>
         <div class="hero__visual">
-          <img src="/images/products/mider-editing.svg" alt="Mider Video/Photo Editor" class="hero__image" />
+          <img src="/images/products/flow-project.svg" alt="Flow Project Management Platform" class="hero__image" />
         </div>
       </div>
     </section>
 
-    <!-- Video Editing Features -->
-    <section id="features" class="video-features">
+    <!-- Features Section -->
+    <section id="features" class="features">
       <div class="container">
-        <h2 class="section__title">Professional Video Editing</h2>
+        <h2 class="section__title">Streamlined Project Operations</h2>
         <div class="features__grid">
           <div class="feature">
             <div class="feature__icon">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
-                <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
-                <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
-                <polygon points="10,9 13,11 10,13" stroke="currentColor" stroke-width="2" fill="currentColor"/>
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2"/>
+                <polyline points="3.27,6.96 12,12.01 20.73,6.96" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" stroke-width="2"/>
               </svg>
             </div>
-            <h3 class="feature__title">Non-Linear Editing</h3>
+            <h3 class="feature__title">Project Planning</h3>
             <p class="feature__description">
-              Advanced timeline-based editing with unlimited video and audio tracks. 
-              Professional cutting tools and precision editing capabilities.
+              Comprehensive project planning tools with Gantt charts, task dependencies, 
+              resource allocation, and milestone tracking for successful delivery.
             </p>
           </div>
 
           <div class="feature">
             <div class="feature__icon">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
-                <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24" stroke="currentColor" stroke-width="2"/>
+                <circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="2"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke="currentColor" stroke-width="2"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke="currentColor" stroke-width="2"/>
               </svg>
             </div>
-            <h3 class="feature__title">Color Grading</h3>
+            <h3 class="feature__title">Team Collaboration</h3>
             <p class="feature__description">
-              Professional color correction and grading tools with advanced color wheels, 
-              curves, and LUT support for cinematic looks.
+              Real-time collaboration features with team messaging, file sharing, 
+              comments, and @mentions to keep everyone connected and informed.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="14" x2="16" y2="14" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="18" x2="12" y2="18" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Task Management</h3>
+            <p class="feature__description">
+              Flexible task management with customizable workflows, automated assignments, 
+              priority levels, and deadline tracking to ensure nothing falls through cracks.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Analytics & Reporting</h3>
+            <p class="feature__description">
+              Advanced project analytics with performance metrics, progress tracking, 
+              resource utilization, and customizable reports for data-driven decisions.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Time Tracking</h3>
+            <p class="feature__description">
+              Built-in time tracking with automated timesheets, billable hours tracking, 
+              and productivity insights to optimize team performance.
             </p>
           </div>
 
@@ -70,218 +117,151 @@ import Footer from '../../components/Footer.astro';
                 <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="2"/>
               </svg>
             </div>
-            <h3 class="feature__title">Motion Graphics</h3>
+            <h3 class="feature__title">Integrations</h3>
             <p class="feature__description">
-              Built-in motion graphics engine with keyframe animation, 
-              text effects, and professional transitions and effects library.
-            </p>
-          </div>
-
-          <div class="feature">
-            <div class="feature__icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <polygon points="11 5,6 9,2 9,2 15,6 15,11 19,11 5" stroke="currentColor" stroke-width="2"/>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14" stroke="currentColor" stroke-width="2"/>
-                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" stroke-width="2"/>
-              </svg>
-            </div>
-            <h3 class="feature__title">Audio Post-Production</h3>
-            <p class="feature__description">
-              Advanced audio editing with noise reduction, audio effects, 
-              and multi-channel mixing for professional sound design.
+              Seamless integrations with popular tools including Slack, Microsoft Teams, 
+              Google Workspace, GitHub, and hundreds of other applications.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Photo Editing Features -->
-    <section class="photo-features">
+    <!-- Methodologies Section -->
+    <section class="methodologies">
       <div class="container">
-        <h2 class="section__title">Advanced Photo Editing</h2>
-        <div class="features__grid">
-          <div class="feature">
-            <div class="feature__icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
-                <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2"/>
-                <path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="2"/>
-              </svg>
-            </div>
-            <h3 class="feature__title">Professional Retouching</h3>
-            <p class="feature__description">
-              Advanced retouching tools including healing brush, clone stamp, 
-              and content-aware fill for flawless image editing.
-            </p>
-          </div>
-
-          <div class="feature">
-            <div class="feature__icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2"/>
-                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
-              </svg>
-            </div>
-            <h3 class="feature__title">Layer Management</h3>
-            <p class="feature__description">
-              Sophisticated layer system with blend modes, masks, and adjustment layers 
-              for non-destructive editing workflows.
-            </p>
-          </div>
-
-          <div class="feature">
-            <div class="feature__icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16l4 4-4 4H2l4-4-4-4z" stroke="currentColor" stroke-width="2"/>
-              </svg>
-            </div>
-            <h3 class="feature__title">AI-Powered Tools</h3>
-            <p class="feature__description">
-              Machine learning enhanced features including smart selection, 
-              automatic background removal, and intelligent upscaling.
-            </p>
-          </div>
-
-          <div class="feature">
-            <div class="feature__icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
-                <path d="M7 9l4 4 6-6" stroke="currentColor" stroke-width="2"/>
-              </svg>
-            </div>
-            <h3 class="feature__title">Batch Processing</h3>
-            <p class="feature__description">
-              Process multiple images simultaneously with customizable actions 
-              and automated workflows for efficient production.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Workflows Section -->
-    <section class="workflows">
-      <div class="container">
-        <h2 class="section__title">Streamlined Workflows</h2>
-        <div class="workflows__grid">
-          <div class="workflow">
-            <div class="workflow__header">
-              <div class="workflow__icon">
+        <h2 class="section__title">Support for All Methodologies</h2>
+        <div class="methodologies__grid">
+          <div class="methodology">
+            <div class="methodology__header">
+              <div class="methodology__icon">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" stroke="currentColor" stroke-width="2"/>
-                  <rect x="8" y="2" width="8" height="4" rx="1" stroke="currentColor" stroke-width="2"/>
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2"/>
+                  <polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2"/>
                 </svg>
               </div>
-              <h3 class="workflow__title">Content Creation</h3>
+              <h3 class="methodology__title">Agile/Scrum</h3>
             </div>
-            <p class="workflow__description">
-              Perfect for YouTubers, social media managers, and digital marketers 
-              creating engaging video and photo content.
+            <p class="methodology__description">
+              Native support for Agile methodologies with sprint planning, backlog management, 
+              burndown charts, and scrum ceremonies integration.
             </p>
-            <ul class="workflow__features">
-              <li>Social media templates</li>
-              <li>Quick export presets</li>
-              <li>Brand asset management</li>
-              <li>Team collaboration</li>
+            <ul class="methodology__features">
+              <li>Sprint planning & retrospectives</li>
+              <li>Backlog prioritization</li>
+              <li>Burndown & velocity charts</li>
+              <li>Story points estimation</li>
             </ul>
           </div>
 
-          <div class="workflow">
-            <div class="workflow__header">
-              <div class="workflow__icon">
+          <div class="methodology">
+            <div class="methodology__header">
+              <div class="methodology__icon">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-                  <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
-                  <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                  <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="2"/>
                 </svg>
               </div>
-              <h3 class="workflow__title">Film Production</h3>
+              <h3 class="methodology__title">Kanban</h3>
             </div>
-            <p class="workflow__description">
-              Professional tools for filmmakers, video producers, and post-production 
-              studios working on narrative and commercial projects.
+            <p class="methodology__description">
+              Visual Kanban boards with customizable columns, WIP limits, and card-based 
+              workflow management for continuous delivery teams.
             </p>
-            <ul class="workflow__features">
-              <li>Advanced color grading</li>
-              <li>Multi-camera editing</li>
-              <li>Professional codecs</li>
-              <li>Collaborative review</li>
+            <ul class="methodology__features">
+              <li>Customizable board layouts</li>
+              <li>WIP limit enforcement</li>
+              <li>Card templates & automation</li>
+              <li>Cumulative flow diagrams</li>
             </ul>
           </div>
 
-          <div class="workflow">
-            <div class="workflow__header">
-              <div class="workflow__icon">
+          <div class="methodology">
+            <div class="methodology__header">
+              <div class="methodology__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                  <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2"/>
+                  <rect x="2" y="3" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3 class="methodology__title">Waterfall</h3>
+            </div>
+            <p class="methodology__description">
+              Traditional project management with sequential phases, detailed planning, 
+              and milestone-based progress tracking for structured projects.
+            </p>
+            <ul class="methodology__features">
+              <li>Phase-based planning</li>
+              <li>Gantt chart visualization</li>
+              <li>Milestone tracking</li>
+              <li>Resource allocation</li>
+            </ul>
+          </div>
+
+          <div class="methodology">
+            <div class="methodology__header">
+              <div class="methodology__icon">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
                   <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                  <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="2"/>
                 </svg>
               </div>
-              <h3 class="workflow__title">Commercial Photography</h3>
+              <h3 class="methodology__title">Hybrid</h3>
             </div>
-            <p class="workflow__description">
-              Comprehensive tools for commercial photographers, product photography, 
-              and professional photo retouching services.
+            <p class="methodology__description">
+              Flexible hybrid approach combining elements of multiple methodologies 
+              to match your team's unique workflow and project requirements.
             </p>
-            <ul class="workflow__features">
-              <li>Product photography tools</li>
-              <li>Professional retouching</li>
-              <li>Color management</li>
-              <li>Client proof galleries</li>
+            <ul class="methodology__features">
+              <li>Customizable workflows</li>
+              <li>Mixed planning approaches</li>
+              <li>Flexible reporting</li>
+              <li>Adaptive templates</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Format Support -->
-    <section class="formats">
+    <!-- Templates Section -->
+    <section class="templates">
       <div class="container">
-        <h2 class="section__title">Universal Format Support</h2>
-        <div class="formats__content">
-          <div class="formats__category">
-            <h3 class="formats__title">Video Formats</h3>
-            <div class="formats__list">
-              <span class="format-tag">MP4</span>
-              <span class="format-tag">MOV</span>
-              <span class="format-tag">AVI</span>
-              <span class="format-tag">MKV</span>
-              <span class="format-tag">ProRes</span>
-              <span class="format-tag">DNxHD</span>
-              <span class="format-tag">H.264</span>
-              <span class="format-tag">H.265</span>
-              <span class="format-tag">VP9</span>
-              <span class="format-tag">AV1</span>
+        <h2 class="section__title">Ready-to-Use Project Templates</h2>
+        <div class="templates__content">
+          <div class="templates__category">
+            <h3 class="templates__title">Software Development</h3>
+            <div class="templates__list">
+              <span class="template-tag">Web App Development</span>
+              <span class="template-tag">Mobile App</span>
+              <span class="template-tag">API Development</span>
+              <span class="template-tag">DevOps Pipeline</span>
+              <span class="template-tag">Bug Tracking</span>
+              <span class="template-tag">Feature Release</span>
             </div>
           </div>
 
-          <div class="formats__category">
-            <h3 class="formats__title">Photo Formats</h3>
-            <div class="formats__list">
-              <span class="format-tag">JPEG</span>
-              <span class="format-tag">PNG</span>
-              <span class="format-tag">TIFF</span>
-              <span class="format-tag">RAW</span>
-              <span class="format-tag">PSD</span>
-              <span class="format-tag">HEIF</span>
-              <span class="format-tag">WebP</span>
-              <span class="format-tag">SVG</span>
-              <span class="format-tag">EXR</span>
-              <span class="format-tag">DNG</span>
+          <div class="templates__category">
+            <h3 class="templates__title">Marketing</h3>
+            <div class="templates__list">
+              <span class="template-tag">Campaign Launch</span>
+              <span class="template-tag">Content Calendar</span>
+              <span class="template-tag">Event Planning</span>
+              <span class="template-tag">Product Launch</span>
+              <span class="template-tag">Brand Strategy</span>
+              <span class="template-tag">Social Media</span>
             </div>
           </div>
 
-          <div class="formats__category">
-            <h3 class="formats__title">Audio Formats</h3>
-            <div class="formats__list">
-              <span class="format-tag">WAV</span>
-              <span class="format-tag">MP3</span>
-              <span class="format-tag">AAC</span>
-              <span class="format-tag">FLAC</span>
-              <span class="format-tag">OGG</span>
-              <span class="format-tag">AIFF</span>
-              <span class="format-tag">M4A</span>
-              <span class="format-tag">WMA</span>
+          <div class="templates__category">
+            <h3 class="templates__title">Operations</h3>
+            <div class="templates__list">
+              <span class="template-tag">Process Improvement</span>
+              <span class="template-tag">Vendor Management</span>
+              <span class="template-tag">Onboarding</span>
+              <span class="template-tag">Training Program</span>
+              <span class="template-tag">Compliance Audit</span>
+              <span class="template-tag">Resource Planning</span>
             </div>
           </div>
         </div>
@@ -293,57 +273,57 @@ import Footer from '../../components/Footer.astro';
       <div class="container">
         <h2 class="section__title">Choose Your Plan</h2>
         <div class="pricing__grid">
-          <div class="pricing__card pricing__card--featured">
-            <div class="pricing__badge">Most Popular</div>
-            <h3 class="pricing__title">Pro</h3>
+          <div class="pricing__card">
+            <h3 class="pricing__title">Starter</h3>
             <div class="pricing__price">
               <span class="pricing__currency">£</span>
               <span class="pricing__amount">15</span>
               <span class="pricing__period">/user/month</span>
             </div>
             <ul class="pricing__features">
-              <li>Non-linear video editing</li>
-              <li>Basic color correction</li>
-              <li>Photo retouching tools</li>
-              <li>Standard export formats</li>
+              <li>Up to 10 projects</li>
+              <li>Basic task management</li>
+              <li>Team collaboration</li>
+              <li>File sharing (5GB)</li>
               <li>Email support</li>
             </ul>
-            <a href="/contact" class="btn btn--primary">Choose Pro</a>
+            <a href="/contact" class="btn btn--secondary">Get Started</a>
           </div>
 
-          <div class="pricing__card">
-            <h3 class="pricing__title">Premium</h3>
+          <div class="pricing__card pricing__card--featured">
+            <div class="pricing__badge">Most Popular</div>
+            <h3 class="pricing__title">Professional</h3>
             <div class="pricing__price">
               <span class="pricing__currency">£</span>
               <span class="pricing__amount">25</span>
               <span class="pricing__period">/user/month</span>
             </div>
             <ul class="pricing__features">
-              <li>Advanced video editing</li>
-              <li>Professional color grading</li>
-              <li>Motion graphics tools</li>
-              <li>Advanced photo editing</li>
+              <li>Unlimited projects</li>
+              <li>Advanced planning tools</li>
+              <li>Time tracking & reporting</li>
+              <li>File sharing (100GB)</li>
               <li>Priority support</li>
-              <li>Premium export options</li>
+              <li>Custom workflows</li>
             </ul>
-            <a href="/contact" class="btn btn--secondary">Choose Premium</a>
+            <a href="/contact" class="btn btn--primary">Choose Professional</a>
           </div>
 
           <div class="pricing__card">
-            <h3 class="pricing__title">Max</h3>
+            <h3 class="pricing__title">Enterprise</h3>
             <div class="pricing__price">
               <span class="pricing__currency">£</span>
               <span class="pricing__amount">35</span>
               <span class="pricing__period">/user/month</span>
             </div>
             <ul class="pricing__features">
-              <li>Complete editing suite</li>
-              <li>Advanced color workflows</li>
-              <li>Professional motion graphics</li>
-              <li>AI-powered editing tools</li>
+              <li>Enterprise-grade security</li>
+              <li>Advanced analytics</li>
+              <li>Custom integrations</li>
+              <li>Unlimited storage</li>
               <li>24/7 dedicated support</li>
-              <li>Unlimited export formats</li>
-              <li>Collaboration features</li>
+              <li>Professional services</li>
+              <li>White-label options</li>
             </ul>
             <a href="/contact" class="btn btn--secondary">Contact Sales</a>
           </div>
@@ -355,10 +335,10 @@ import Footer from '../../components/Footer.astro';
     <section class="cta">
       <div class="container">
         <div class="cta__content">
-          <h2 class="cta__title">Unleash Your Creative Potential</h2>
+          <h2 class="cta__title">Transform Your Project Management</h2>
           <p class="cta__description">
-            Join millions of creators worldwide who trust Mider for their video 
-            and photo editing needs. Start your free trial today.
+            Join thousands of teams worldwide who trust Flow to deliver projects on time 
+            and within budget. Start your free trial today and experience the difference.
           </p>
           <div class="cta__actions">
             <a href="/contact" class="btn btn--primary btn--large">Start Free Trial</a>
@@ -436,13 +416,9 @@ import Footer from '../../components/Footer.astro';
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   }
 
-  /* Features Sections */
-  .video-features, .photo-features {
+  /* Features Section */
+  .features {
     padding: 6rem 0;
-  }
-
-  .photo-features {
-    background-color: var(--color-background-light);
   }
 
   .section__title {
@@ -479,18 +455,19 @@ import Footer from '../../components/Footer.astro';
     line-height: 1.6;
   }
 
-  /* Workflows Section */
-  .workflows {
+  /* Methodologies Section */
+  .methodologies {
+    background-color: var(--color-background-light);
     padding: 6rem 0;
   }
 
-  .workflows__grid {
+  .methodologies__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2.5rem;
   }
 
-  .workflow {
+  .methodology {
     background-color: var(--color-background);
     border: 1px solid var(--color-border);
     border-radius: 1rem;
@@ -498,83 +475,81 @@ import Footer from '../../components/Footer.astro';
     transition: all 0.3s ease;
   }
 
-  .workflow:hover {
+  .methodology:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   }
 
-  .workflow__header {
+  .methodology__header {
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
   }
 
-  .workflow__icon {
+  .methodology__icon {
     color: var(--color-accent);
     margin-right: 1rem;
     flex-shrink: 0;
   }
 
-  .workflow__title {
+  .methodology__title {
     color: var(--color-primary);
     margin: 0;
   }
 
-  .workflow__description {
+  .methodology__description {
     color: var(--color-secondary);
     line-height: 1.6;
     margin-bottom: 1.5rem;
   }
 
-  .workflow__features {
+  .methodology__features {
     list-style: none;
   }
 
-  .workflow__features li {
+  .methodology__features li {
     color: var(--color-secondary);
     margin-bottom: 0.5rem;
     position: relative;
     padding-left: 1.5rem;
   }
 
-  .workflow__features li::before {
-    content: '◉';
+  .methodology__features li::before {
+    content: '📋';
     position: absolute;
     left: 0;
-    color: var(--color-accent);
     font-size: 0.75rem;
   }
 
-  /* Formats Section */
-  .formats {
-    background-color: var(--color-background-light);
+  /* Templates Section */
+  .templates {
     padding: 6rem 0;
   }
 
-  .formats__content {
+  .templates__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
   }
 
-  .formats__category {
+  .templates__category {
     text-align: center;
   }
 
-  .formats__title {
+  .templates__title {
     margin-bottom: 2rem;
     color: var(--color-primary);
   }
 
-  .formats__list {
+  .templates__list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
     justify-content: center;
   }
 
-  .format-tag {
-    background-color: var(--color-background);
+  .template-tag {
+    background-color: var(--color-background-light);
     border: 1px solid var(--color-border);
     padding: 0.5rem 1rem;
     border-radius: 1.5rem;
@@ -584,7 +559,7 @@ import Footer from '../../components/Footer.astro';
     transition: all 0.2s ease;
   }
 
-  .format-tag:hover {
+  .template-tag:hover {
     background-color: var(--color-accent);
     color: white;
     border-color: var(--color-accent);
@@ -592,6 +567,7 @@ import Footer from '../../components/Footer.astro';
 
   /* Pricing Section */
   .pricing {
+    background-color: var(--color-background-light);
     padding: 6rem 0;
   }
 
@@ -682,10 +658,9 @@ import Footer from '../../components/Footer.astro';
   }
 
   .pricing__features li::before {
-    content: '◉';
+    content: '📋';
     position: absolute;
     left: 0;
-    color: var(--color-accent);
     font-size: 0.75rem;
   }
 
@@ -801,15 +776,15 @@ import Footer from '../../components/Footer.astro';
       text-align: center;
     }
 
-    .video-features, .photo-features, .workflows, .formats, .pricing, .cta {
+    .features, .methodologies, .templates, .pricing, .cta {
       padding: 4rem 0;
     }
 
-    .features__grid, .workflows__grid {
+    .features__grid, .methodologies__grid {
       grid-template-columns: 1fr;
     }
 
-    .formats__content {
+    .templates__content {
       grid-template-columns: 1fr;
     }
 
