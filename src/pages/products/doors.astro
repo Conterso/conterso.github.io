@@ -23,9 +23,6 @@ import Footer from '../../components/Footer.astro';
             <a href="#features" class="btn btn--secondary">Learn More</a>
           </div>
         </div>
-        <div class="hero__visual">
-          <img src="/images/products/doors-os.svg" alt="Doors Operating System Interface" class="hero__image" />
-        </div>
       </div>
     </section>
 
@@ -296,14 +293,13 @@ import Footer from '../../components/Footer.astro';
   /* Hero Section */
   .hero {
     background: linear-gradient(135deg, var(--color-background-light) 0%, var(--color-background) 100%);
-    padding: 6rem 0;
+    padding: 8rem 0 6rem;
   }
 
-  .hero .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+  .hero__content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .hero__badge {
@@ -335,15 +331,8 @@ import Footer from '../../components/Footer.astro';
   .hero__actions {
     display: flex;
     gap: 1rem;
+    justify-content: center;
     flex-wrap: wrap;
-  }
-
-  /* Hero Image */
-  .hero__image {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   }
 
   /* Features Section */
@@ -611,12 +600,7 @@ import Footer from '../../components/Footer.astro';
   /* Responsive Design */
   @media (max-width: 768px) {
     .hero {
-      padding: 4rem 0;
-    }
-
-    .hero .container {
-      grid-template-columns: 1fr;
-      gap: 2rem;
+      padding: 6rem 0 4rem;
     }
 
     .hero__title {
@@ -625,9 +609,12 @@ import Footer from '../../components/Footer.astro';
 
     .hero__actions {
       flex-direction: column;
+      align-items: center;
     }
 
     .btn {
+      width: 100%;
+      max-width: 300px;
       text-align: center;
     }
 
@@ -658,11 +645,6 @@ import Footer from '../../components/Footer.astro';
     .cta__actions {
       flex-direction: column;
       align-items: center;
-    }
-
-    .btn {
-      width: 100%;
-      max-width: 300px;
     }
   }
 </style>

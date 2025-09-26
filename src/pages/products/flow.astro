@@ -1,0 +1,781 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout title="Flow - Project Management Platform | Conterso">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge">Project Management</div>
+          <h1 class="hero__title">Flow</h1>
+          <p class="hero__subtitle">
+            Intuitive project management platform that streamlines workflows, enhances team 
+            collaboration, and delivers projects on time with powerful planning and tracking tools.
+          </p>
+          <div class="hero__actions">
+            <a href="/contact" class="btn btn--primary">Start Free Trial</a>
+            <a href="#features" class="btn btn--secondary">Explore Features</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section__title">Streamlined Project Operations</h2>
+        <div class="features__grid">
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2"/>
+                <polyline points="3.27,6.96 12,12.01 20.73,6.96" stroke="currentColor" stroke-width="2"/>
+                <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Project Planning</h3>
+            <p class="feature__description">
+              Comprehensive project planning tools with Gantt charts, task dependencies, 
+              resource allocation, and milestone tracking for successful delivery.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="2"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke="currentColor" stroke-width="2"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Team Collaboration</h3>
+            <p class="feature__description">
+              Real-time collaboration features with team messaging, file sharing, 
+              comments, and @mentions to keep everyone connected and informed.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="14" x2="16" y2="14" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="18" x2="12" y2="18" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Task Management</h3>
+            <p class="feature__description">
+              Flexible task management with customizable workflows, automated assignments, 
+              priority levels, and deadline tracking to ensure nothing falls through cracks.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Analytics & Reporting</h3>
+            <p class="feature__description">
+              Advanced project analytics with performance metrics, progress tracking, 
+              resource utilization, and customizable reports for data-driven decisions.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Time Tracking</h3>
+            <p class="feature__description">
+              Built-in time tracking with automated timesheets, billable hours tracking, 
+              and productivity insights to optimize team performance.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Integrations</h3>
+            <p class="feature__description">
+              Seamless integrations with popular tools including Slack, Microsoft Teams, 
+              Google Workspace, GitHub, and hundreds of other applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodologies Section -->
+    <section class="methodologies">
+      <div class="container">
+        <h2 class="section__title">Support for All Methodologies</h2>
+        <div class="methodologies__grid">
+          <div class="methodology">
+            <div class="methodology__header">
+              <div class="methodology__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2"/>
+                  <polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3 class="methodology__title">Agile/Scrum</h3>
+            </div>
+            <p class="methodology__description">
+              Native support for Agile methodologies with sprint planning, backlog management, 
+              burndown charts, and scrum ceremonies integration.
+            </p>
+            <ul class="methodology__features">
+              <li>Sprint planning & retrospectives</li>
+              <li>Backlog prioritization</li>
+              <li>Burndown & velocity charts</li>
+              <li>Story points estimation</li>
+            </ul>
+          </div>
+
+          <div class="methodology">
+            <div class="methodology__header">
+              <div class="methodology__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3 class="methodology__title">Kanban</h3>
+            </div>
+            <p class="methodology__description">
+              Visual Kanban boards with customizable columns, WIP limits, and card-based 
+              workflow management for continuous delivery teams.
+            </p>
+            <ul class="methodology__features">
+              <li>Customizable board layouts</li>
+              <li>WIP limit enforcement</li>
+              <li>Card templates & automation</li>
+              <li>Cumulative flow diagrams</li>
+            </ul>
+          </div>
+
+          <div class="methodology">
+            <div class="methodology__header">
+              <div class="methodology__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                  <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2"/>
+                  <rect x="2" y="3" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3 class="methodology__title">Waterfall</h3>
+            </div>
+            <p class="methodology__description">
+              Traditional project management with sequential phases, detailed planning, 
+              and milestone-based progress tracking for structured projects.
+            </p>
+            <ul class="methodology__features">
+              <li>Phase-based planning</li>
+              <li>Gantt chart visualization</li>
+              <li>Milestone tracking</li>
+              <li>Resource allocation</li>
+            </ul>
+          </div>
+
+          <div class="methodology">
+            <div class="methodology__header">
+              <div class="methodology__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3 class="methodology__title">Hybrid</h3>
+            </div>
+            <p class="methodology__description">
+              Flexible hybrid approach combining elements of multiple methodologies 
+              to match your team's unique workflow and project requirements.
+            </p>
+            <ul class="methodology__features">
+              <li>Customizable workflows</li>
+              <li>Mixed planning approaches</li>
+              <li>Flexible reporting</li>
+              <li>Adaptive templates</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section class="templates">
+      <div class="container">
+        <h2 class="section__title">Ready-to-Use Project Templates</h2>
+        <div class="templates__content">
+          <div class="templates__category">
+            <h3 class="templates__title">Software Development</h3>
+            <div class="templates__list">
+              <span class="template-tag">Web App Development</span>
+              <span class="template-tag">Mobile App</span>
+              <span class="template-tag">API Development</span>
+              <span class="template-tag">DevOps Pipeline</span>
+              <span class="template-tag">Bug Tracking</span>
+              <span class="template-tag">Feature Release</span>
+            </div>
+          </div>
+
+          <div class="templates__category">
+            <h3 class="templates__title">Marketing</h3>
+            <div class="templates__list">
+              <span class="template-tag">Campaign Launch</span>
+              <span class="template-tag">Content Calendar</span>
+              <span class="template-tag">Event Planning</span>
+              <span class="template-tag">Product Launch</span>
+              <span class="template-tag">Brand Strategy</span>
+              <span class="template-tag">Social Media</span>
+            </div>
+          </div>
+
+          <div class="templates__category">
+            <h3 class="templates__title">Operations</h3>
+            <div class="templates__list">
+              <span class="template-tag">Process Improvement</span>
+              <span class="template-tag">Vendor Management</span>
+              <span class="template-tag">Onboarding</span>
+              <span class="template-tag">Training Program</span>
+              <span class="template-tag">Compliance Audit</span>
+              <span class="template-tag">Resource Planning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+      <div class="container">
+        <h2 class="section__title">Choose Your Plan</h2>
+        <div class="pricing__grid">
+          <div class="pricing__card">
+            <h3 class="pricing__title">Starter</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">12</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Up to 10 projects</li>
+              <li>Basic task management</li>
+              <li>Team collaboration</li>
+              <li>File sharing (5GB)</li>
+              <li>Email support</li>
+            </ul>
+            <a href="/contact" class="btn btn--secondary">Get Started</a>
+          </div>
+
+          <div class="pricing__card pricing__card--featured">
+            <div class="pricing__badge">Most Popular</div>
+            <h3 class="pricing__title">Professional</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">25</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Unlimited projects</li>
+              <li>Advanced planning tools</li>
+              <li>Time tracking & reporting</li>
+              <li>File sharing (100GB)</li>
+              <li>Priority support</li>
+              <li>Custom workflows</li>
+            </ul>
+            <a href="/contact" class="btn btn--primary">Choose Professional</a>
+          </div>
+
+          <div class="pricing__card">
+            <h3 class="pricing__title">Enterprise</h3>
+            <div class="pricing__price">
+              <span class="pricing__currency">£</span>
+              <span class="pricing__amount">40</span>
+              <span class="pricing__period">/user/month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Enterprise-grade security</li>
+              <li>Advanced analytics</li>
+              <li>Custom integrations</li>
+              <li>Unlimited storage</li>
+              <li>24/7 dedicated support</li>
+              <li>Professional services</li>
+              <li>White-label options</li>
+            </ul>
+            <a href="/contact" class="btn btn--secondary">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__content">
+          <h2 class="cta__title">Transform Your Project Management</h2>
+          <p class="cta__description">
+            Join thousands of teams worldwide who trust Flow to deliver projects on time 
+            and within budget. Start your free trial today and experience the difference.
+          </p>
+          <div class="cta__actions">
+            <a href="/contact" class="btn btn--primary btn--large">Start Free Trial</a>
+            <a href="/products" class="btn btn--secondary-light">View All Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--color-background-light) 0%, var(--color-background) 100%);
+    padding: 8rem 0 6rem;
+  }
+
+  .hero__content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero__badge {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .hero__subtitle {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Features Section */
+  .features {
+    padding: 6rem 0;
+  }
+
+  .section__title {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--color-primary);
+  }
+
+  .features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .feature {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .feature__icon {
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .feature__title {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .feature__description {
+    color: var(--color-secondary);
+    line-height: 1.6;
+  }
+
+  /* Methodologies Section */
+  .methodologies {
+    background-color: var(--color-background-light);
+    padding: 6rem 0;
+  }
+
+  .methodologies__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .methodology {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .methodology:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .methodology__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .methodology__icon {
+    color: var(--color-accent);
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+
+  .methodology__title {
+    color: var(--color-primary);
+    margin: 0;
+  }
+
+  .methodology__description {
+    color: var(--color-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .methodology__features {
+    list-style: none;
+  }
+
+  .methodology__features li {
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .methodology__features li::before {
+    content: '📋';
+    position: absolute;
+    left: 0;
+    font-size: 0.75rem;
+  }
+
+  /* Templates Section */
+  .templates {
+    padding: 6rem 0;
+  }
+
+  .templates__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+  }
+
+  .templates__category {
+    text-align: center;
+  }
+
+  .templates__title {
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+  }
+
+  .templates__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .template-tag {
+    background-color: var(--color-background-light);
+    border: 1px solid var(--color-border);
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    color: var(--color-secondary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .template-tag:hover {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+
+  /* Pricing Section */
+  .pricing {
+    background-color: var(--color-background-light);
+    padding: 6rem 0;
+  }
+
+  .pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .pricing__card {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .pricing__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing__card--featured {
+    border-color: var(--color-accent);
+    transform: scale(1.05);
+  }
+
+  .pricing__card--featured:hover {
+    transform: scale(1.05) translateY(-4px);
+  }
+
+  .pricing__badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .pricing__title {
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .pricing__price {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .pricing__currency {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+  }
+
+  .pricing__amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .pricing__period {
+    color: var(--color-secondary);
+  }
+
+  .pricing__features {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .pricing__features li {
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .pricing__features li::before {
+    content: '📋';
+    position: absolute;
+    left: 0;
+    font-size: 0.75rem;
+  }
+
+  /* CTA Section */
+  .cta {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 6rem 0;
+  }
+
+  .cta__content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta__title {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .cta__description {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+  }
+
+  .cta__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid;
+    font-size: 1rem;
+  }
+
+  .btn--primary {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+
+  .btn--primary:hover {
+    background-color: #0052a3;
+    border-color: #0052a3;
+    text-decoration: none;
+  }
+
+  .btn--secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-border);
+  }
+
+  .btn--secondary:hover {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .btn--secondary-light {
+    background-color: transparent;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .btn--secondary-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+    text-decoration: none;
+  }
+
+  .btn--large {
+    padding: 1.125rem 2.5rem;
+    font-size: 1.125rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 6rem 0 4rem;
+    }
+
+    .hero__title {
+      font-size: 2.5rem;
+    }
+
+    .hero__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .features, .methodologies, .templates, .pricing, .cta {
+      padding: 4rem 0;
+    }
+
+    .features__grid, .methodologies__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .templates__content {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing__card--featured {
+      transform: none;
+    }
+
+    .pricing__card--featured:hover {
+      transform: translateY(-4px);
+    }
+
+    .cta__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
