@@ -1,10 +1,19 @@
 ---
+/**
+ * Shield Product Page
+ * 
+ * Cybersecurity platform product page showcasing features,
+ * use cases, pricing, and call-to-action.
+ */
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import FeatureCard from '../../components/FeatureCard.astro';
+import CTASection from '../../components/CTASection.astro';
 ---
 
-<BaseLayout title="Sounder - Music Production Software | Conterso">
+<BaseLayout title="Shield - Cybersecurity Platform | Conterso">
   <Header />
   
   <main>
@@ -12,19 +21,19 @@ import Footer from '../../components/Footer.astro';
     <section class="hero">
       <div class="container">
         <div class="hero__content">
-          <div class="hero__badge">Music Production</div>
-          <h1 class="hero__title">Sounder</h1>
+          <div class="hero__badge">Cybersecurity Platform</div>
+          <h1 class="hero__title">Shield</h1>
           <p class="hero__subtitle">
-            Professional music creation and production software that empowers artists, 
-            producers, and sound engineers to bring their creative vision to life.
+            Advanced cybersecurity platform that provides comprehensive protection against 
+            modern threats with AI-powered detection and automated response capabilities.
           </p>
           <div class="hero__actions">
-            <a href="/contact" class="btn btn--primary">Download Trial</a>
-            <a href="#features" class="btn btn--secondary">Explore Features</a>
+            <a href="/contact" class="btn btn--primary">Start Free Trial</a>
+            <a href="#features" class="btn btn--secondary">Explore Security</a>
           </div>
         </div>
         <div class="hero__visual">
-          <img src="/images/products/sounder-music.svg" alt="Sounder Music Production" class="hero__image" />
+          <img src="/images/products/shield-security.svg" alt="Shield Cybersecurity Platform" class="hero__image" />
         </div>
       </div>
     </section>
@@ -32,80 +41,60 @@ import Footer from '../../components/Footer.astro';
     <!-- Features Section -->
     <section id="features" class="features">
       <div class="container">
-        <h2 class="section__title">Professional Music Production Tools</h2>
+        <h2 class="section__title">Advanced Threat Protection</h2>
         <div class="features__grid">
           <div class="feature">
             <div class="feature__icon">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="2"/>
-                <path d="M8 6v12M16 6v12" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2"/>
               </svg>
             </div>
-            <h3 class="feature__title">Multi-Track Recording</h3>
+            <h3 class="feature__title">AI-Powered Detection</h3>
             <p class="feature__description">
-              Record unlimited audio and MIDI tracks with pristine quality. 
-              Advanced editing tools and non-destructive workflow keep your creativity flowing.
+              Machine learning algorithms continuously analyze patterns and behaviors 
+              to identify and prevent sophisticated cyber threats in real-time.
             </p>
           </div>
 
           <div class="feature">
             <div class="feature__icon">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
-                <path d="M20.188 10.934a6.5 6.5 0 0 0-1.188-1.934M3.812 13.066a6.5 6.5 0 0 0 1.188 1.934" stroke="currentColor" stroke-width="2"/>
-                <path d="M14.828 14.828a4 4 0 0 1-5.656 0M9.172 9.172a4 4 0 0 1 5.656 0" stroke="currentColor" stroke-width="2"/>
+                <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="16" r="1" stroke="currentColor" stroke-width="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2"/>
               </svg>
             </div>
-            <h3 class="feature__title">Advanced Audio Effects</h3>
+            <h3 class="feature__title">Zero Trust Architecture</h3>
             <p class="feature__description">
-              Professional-grade effects library including EQ, compression, reverb, 
-              delay, and creative processors to shape your perfect sound.
+              Implement zero trust security model with continuous verification, 
+              micro-segmentation, and least-privilege access control.
             </p>
           </div>
 
           <div class="feature">
             <div class="feature__icon">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
-                <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
-                <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
-                <circle cx="8" cy="9" r="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2"/>
               </svg>
             </div>
-            <h3 class="feature__title">Virtual Instruments</h3>
+            <h3 class="feature__title">Automated Response</h3>
             <p class="feature__description">
-              Comprehensive collection of synthesizers, samplers, and acoustic 
-              instrument emulations for any musical genre or style.
+              Intelligent automated incident response system that contains threats, 
+              alerts security teams, and initiates remediation procedures.
             </p>
           </div>
 
           <div class="feature">
             <div class="feature__icon">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="2"/>
-                <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
-                <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
+                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2"/>
               </svg>
             </div>
-            <h3 class="feature__title">MIDI Sequencing</h3>
+            <h3 class="feature__title">Real-Time Monitoring</h3>
             <p class="feature__description">
-              Powerful MIDI editor with piano roll, drum editor, and score view. 
-              Real-time MIDI effects and advanced automation capabilities.
-            </p>
-          </div>
-
-          <div class="feature">
-            <div class="feature__icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <polygon points="11 5,6 9,2 9,2 15,6 15,11 19,11 5" stroke="currentColor" stroke-width="2"/>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14" stroke="currentColor" stroke-width="2"/>
-                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" stroke-width="2"/>
-              </svg>
-            </div>
-            <h3 class="feature__title">Professional Mixing</h3>
-            <p class="feature__description">
-              Advanced mixing console with automation, sends, and professional 
-              metering. Export in any format with customizable quality settings.
+              24/7 network monitoring with comprehensive dashboards, alerts, 
+              and forensic analysis capabilities for complete visibility.
             </p>
           </div>
 
@@ -119,10 +108,26 @@ import Footer from '../../components/Footer.astro';
                 <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke="currentColor" stroke-width="2"/>
               </svg>
             </div>
-            <h3 class="feature__title">Plugin Integration</h3>
+            <h3 class="feature__title">Threat Intelligence</h3>
             <p class="feature__description">
-              Full support for VST, AU, and AAX plugins. Seamlessly integrate 
-              your favorite third-party instruments and effects.
+              Global threat intelligence network provides up-to-date information 
+              on emerging threats and vulnerability assessments.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
+                <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2"/>
+                <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2"/>
+                <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="feature__title">Compliance Management</h3>
+            <p class="feature__description">
+              Built-in compliance frameworks for GDPR, HIPAA, SOX, and other 
+              regulations with automated reporting and audit trails.
             </p>
           </div>
         </div>
@@ -132,92 +137,117 @@ import Footer from '../../components/Footer.astro';
     <!-- Use Cases Section -->
     <section class="use-cases">
       <div class="container">
-        <h2 class="section__title">Perfect For Every Creator</h2>
+        <h2 class="section__title">Comprehensive Security Solutions</h2>
         <div class="use-cases__grid">
           <div class="use-case">
-            <h3 class="use-case__title">Music Producers</h3>
+            <h3 class="use-case__title">Enterprise Networks</h3>
             <p class="use-case__description">
-              Create professional tracks with industry-standard tools and workflows. 
-              From hip-hop beats to orchestral arrangements, Sounder handles it all.
+              Protect large-scale enterprise networks with advanced threat detection, 
+              network segmentation, and centralized security management.
             </p>
             <ul class="use-case__features">
-              <li>Professional sample libraries</li>
-              <li>Advanced beat matching</li>
-              <li>Collaboration tools</li>
-              <li>Export to all formats</li>
+              <li>Network access control</li>
+              <li>Advanced firewall management</li>
+              <li>Intrusion detection & prevention</li>
+              <li>Security orchestration</li>
             </ul>
           </div>
 
           <div class="use-case">
-            <h3 class="use-case__title">Recording Artists</h3>
+            <h3 class="use-case__title">Cloud Infrastructure</h3>
             <p class="use-case__description">
-              Record, edit, and produce your music with studio-quality results. 
-              Perfect for solo artists, bands, and recording sessions.
+              Secure cloud environments with multi-cloud visibility, container security, 
+              and cloud-native threat protection capabilities.
             </p>
             <ul class="use-case__features">
-              <li>Multi-channel recording</li>
-              <li>Real-time monitoring</li>
-              <li>Pitch correction</li>
-              <li>Vocal processing</li>
+              <li>Cloud security posture management</li>
+              <li>Container & Kubernetes security</li>
+              <li>Multi-cloud visibility</li>
+              <li>Infrastructure monitoring</li>
             </ul>
           </div>
 
           <div class="use-case">
-            <h3 class="use-case__title">Sound Engineers</h3>
+            <h3 class="use-case__title">Endpoint Protection</h3>
             <p class="use-case__description">
-              Professional mixing and mastering tools with precise control over 
-              every aspect of your audio production workflow.
+              Comprehensive endpoint security for desktops, laptops, and mobile devices 
+              with advanced malware protection and device management.
             </p>
             <ul class="use-case__features">
-              <li>Professional metering</li>
-              <li>Advanced routing</li>
-              <li>Mastering suite</li>
-              <li>Surround sound support</li>
+              <li>Next-gen antivirus</li>
+              <li>Endpoint detection & response</li>
+              <li>Device compliance management</li>
+              <li>Mobile device security</li>
             </ul>
           </div>
 
           <div class="use-case">
-            <h3 class="use-case__title">Composers</h3>
+            <h3 class="use-case__title">Identity & Access</h3>
             <p class="use-case__description">
-              Compose and arrange music for film, games, and media with 
-              comprehensive scoring tools and orchestral libraries.
+              Advanced identity and access management with single sign-on, 
+              multi-factor authentication, and privileged access management.
             </p>
             <ul class="use-case__features">
-              <li>Notation and scoring</li>
-              <li>Orchestral samples</li>
-              <li>MIDI orchestration</li>
-              <li>Sync to video</li>
+              <li>Single sign-on (SSO)</li>
+              <li>Multi-factor authentication</li>
+              <li>Privileged access management</li>
+              <li>Identity governance</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- System Requirements -->
-    <section class="requirements">
+    <!-- Security Dashboard -->
+    <section class="dashboard">
       <div class="container">
-        <h2 class="section__title">System Requirements</h2>
-        <div class="requirements__content">
-          <div class="requirements__category">
-            <h3 class="requirements__title">Minimum Requirements</h3>
-            <ul class="requirements__list">
-              <li><strong>OS:</strong> Windows 10/11, macOS 10.15+, Ubuntu 20.04+</li>
-              <li><strong>CPU:</strong> Intel i5 / AMD Ryzen 5 or equivalent</li>
-              <li><strong>RAM:</strong> 8GB (16GB recommended)</li>
-              <li><strong>Storage:</strong> 8GB free space + content libraries</li>
-              <li><strong>Audio:</strong> ASIO compatible audio interface</li>
-            </ul>
-          </div>
+        <h2 class="section__title">Unified Security Dashboard</h2>
+        <div class="dashboard__content">
+          <div class="dashboard__features">
+            <div class="dashboard__feature">
+              <div class="dashboard__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                  <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                  <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3 class="dashboard__title">Real-Time Analytics</h3>
+              <p class="dashboard__description">
+                Live security metrics, threat analysis, and performance monitoring 
+                with customizable dashboards and reporting.
+              </p>
+            </div>
 
-          <div class="requirements__category">
-            <h3 class="requirements__title">Recommended Setup</h3>
-            <ul class="requirements__list">
-              <li><strong>OS:</strong> Latest versions with regular updates</li>
-              <li><strong>CPU:</strong> Intel i7 / AMD Ryzen 7 or better</li>
-              <li><strong>RAM:</strong> 32GB for large projects</li>
-              <li><strong>Storage:</strong> SSD with 100GB+ free space</li>
-              <li><strong>Audio:</strong> Professional audio interface with low latency</li>
-            </ul>
+            <div class="dashboard__feature">
+              <div class="dashboard__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                  <path d="M18 6l-12 12" stroke="currentColor" stroke-width="2"/>
+                  <path d="M6 6l12 12" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3 class="dashboard__title">Incident Management</h3>
+              <p class="dashboard__description">
+                Streamlined incident response workflow with automated ticketing, 
+                investigation tools, and forensic capabilities.
+              </p>
+            </div>
+
+            <div class="dashboard__feature">
+              <div class="dashboard__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                  <polyline points="9,11 12,14 22,4" stroke="currentColor" stroke-width="2"/>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3 class="dashboard__title">Compliance Reporting</h3>
+              <p class="dashboard__description">
+                Automated compliance reporting with built-in templates for major 
+                regulatory frameworks and audit requirements.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -226,59 +256,59 @@ import Footer from '../../components/Footer.astro';
     <!-- Pricing Section -->
     <section class="pricing">
       <div class="container">
-        <h2 class="section__title">Choose Your Plan</h2>
+        <h2 class="section__title">Choose Your Security Plan</h2>
         <div class="pricing__grid">
           <div class="pricing__card">
-            <h3 class="pricing__title">Plus</h3>
+            <h3 class="pricing__title">Essential</h3>
             <div class="pricing__price">
               <span class="pricing__currency">£</span>
               <span class="pricing__amount">15</span>
               <span class="pricing__period">/user/month</span>
             </div>
             <ul class="pricing__features">
-              <li>Multi-track recording</li>
-              <li>Basic audio effects</li>
-              <li>Virtual instruments</li>
-              <li>Email support</li>
-              <li>Standard sample library</li>
+              <li>Basic threat detection</li>
+              <li>Endpoint protection</li>
+              <li>Email security</li>
+              <li>Standard support</li>
+              <li>Basic reporting</li>
             </ul>
             <a href="/contact" class="btn btn--secondary">Get Started</a>
           </div>
 
           <div class="pricing__card pricing__card--featured">
             <div class="pricing__badge">Most Popular</div>
-            <h3 class="pricing__title">Pro</h3>
+            <h3 class="pricing__title">Professional</h3>
             <div class="pricing__price">
               <span class="pricing__currency">£</span>
               <span class="pricing__amount">25</span>
               <span class="pricing__period">/user/month</span>
             </div>
             <ul class="pricing__features">
-              <li>Advanced recording features</li>
-              <li>Professional audio effects</li>
-              <li>Complete virtual studio</li>
+              <li>Advanced AI threat detection</li>
+              <li>Zero trust architecture</li>
+              <li>Automated response</li>
+              <li>Real-time monitoring</li>
               <li>Priority support</li>
-              <li>Premium sample library</li>
-              <li>MIDI sequencing</li>
+              <li>Compliance management</li>
             </ul>
-            <a href="/contact" class="btn btn--primary">Choose Pro</a>
+            <a href="/contact" class="btn btn--primary">Choose Professional</a>
           </div>
 
           <div class="pricing__card">
-            <h3 class="pricing__title">Premium</h3>
+            <h3 class="pricing__title">Enterprise</h3>
             <div class="pricing__price">
               <span class="pricing__currency">£</span>
               <span class="pricing__amount">35</span>
               <span class="pricing__period">/user/month</span>
             </div>
             <ul class="pricing__features">
-              <li>Complete music production suite</li>
-              <li>Advanced mixing & mastering</li>
-              <li>Unlimited virtual instruments</li>
+              <li>Complete security platform</li>
+              <li>Custom threat intelligence</li>
+              <li>Advanced forensics</li>
               <li>24/7 dedicated support</li>
-              <li>Exclusive sample libraries</li>
-              <li>Professional collaboration tools</li>
-              <li>Custom plugin integration</li>
+              <li>Custom integrations</li>
+              <li>Professional services</li>
+              <li>Unlimited compliance reports</li>
             </ul>
             <a href="/contact" class="btn btn--secondary">Contact Sales</a>
           </div>
@@ -290,13 +320,13 @@ import Footer from '../../components/Footer.astro';
     <section class="cta">
       <div class="container">
         <div class="cta__content">
-          <h2 class="cta__title">Start Creating Today</h2>
+          <h2 class="cta__title">Protect Your Organization Today</h2>
           <p class="cta__description">
-            Download your free trial of Sounder and discover why artists and producers 
-            worldwide choose our platform for their music creation needs.
+            Don't wait for a security breach. Start your free trial of Shield and experience 
+            enterprise-grade cybersecurity protection for your organization.
           </p>
           <div class="cta__actions">
-            <a href="/contact" class="btn btn--primary btn--large">Download Free Trial</a>
+            <a href="/contact" class="btn btn--primary btn--large">Start Free Trial</a>
             <a href="/products" class="btn btn--secondary-light">View All Products</a>
           </div>
         </div>
@@ -458,55 +488,53 @@ import Footer from '../../components/Footer.astro';
   }
 
   .use-case__features li::before {
-    content: '♪';
+    content: '🛡️';
     position: absolute;
     left: 0;
-    color: var(--color-accent);
-    font-weight: bold;
+    font-size: 0.875rem;
   }
 
-  /* Requirements Section */
-  .requirements {
+  /* Dashboard Section */
+  .dashboard {
     padding: 6rem 0;
   }
 
-  .requirements__content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 3rem;
+  .dashboard__content {
     max-width: 1000px;
     margin: 0 auto;
   }
 
-  .requirements__category {
-    background-color: var(--color-background);
-    border: 1px solid var(--color-border);
-    border-radius: 1rem;
-    padding: 2.5rem;
+  .dashboard__features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
   }
 
-  .requirements__title {
+  .dashboard__feature {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .dashboard__icon {
+    color: var(--color-accent);
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dashboard__title {
+    margin-bottom: 1rem;
     color: var(--color-primary);
-    font-size: 1.25rem;
   }
 
-  .requirements__list {
-    list-style: none;
-  }
-
-  .requirements__list li {
+  .dashboard__description {
     color: var(--color-secondary);
-    margin-bottom: 0.75rem;
-    line-height: 1.5;
-  }
-
-  .requirements__list strong {
-    color: var(--color-primary);
+    line-height: 1.6;
   }
 
   /* Pricing Section */
   .pricing {
+    background-color: var(--color-background-light);
     padding: 6rem 0;
   }
 
@@ -597,11 +625,10 @@ import Footer from '../../components/Footer.astro';
   }
 
   .pricing__features li::before {
-    content: '♪';
+    content: '🛡️';
     position: absolute;
     left: 0;
-    color: var(--color-accent);
-    font-weight: bold;
+    font-size: 0.75rem;
   }
 
   /* CTA Section */
@@ -716,15 +743,11 @@ import Footer from '../../components/Footer.astro';
       text-align: center;
     }
 
-    .features, .use-cases, .requirements, .pricing, .cta {
+    .features, .use-cases, .dashboard, .pricing, .cta {
       padding: 4rem 0;
     }
 
-    .features__grid, .use-cases__grid {
-      grid-template-columns: 1fr;
-    }
-
-    .requirements__content {
+    .features__grid, .use-cases__grid, .dashboard__features {
       grid-template-columns: 1fr;
     }
 

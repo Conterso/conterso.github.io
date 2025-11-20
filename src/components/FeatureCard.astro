@@ -1,0 +1,112 @@
+---
+/**
+ * FeatureCard Component
+ * 
+ * A reusable card component for displaying product features with neumorphic design.
+ * 
+ * @component
+ * @example
+ * <FeatureCard 
+ *   title="Advanced Security"
+ *   description="Multi-layered security architecture"
+ *   icon="shield"
+ * />
+ * 
+ * @prop {string} title - The feature title
+ * @prop {string} description - The feature description
+ * @prop {string} [icon] - Optional icon name or SVG content
+ * @prop {boolean} [glass=false] - Use glassmorphism style instead of neumorphism
+ */
+
+export interface Props {
+  title: string;
+  description: string;
+  icon?: string;
+  glass?: boolean;
+}
+
+const { title, description, icon, glass = false } = Astro.props;
+---
+
+<div class={`feature-card ${glass ? 'feature-card--glass' : 'feature-card--neu'} animate-on-scroll`}>
+  {icon && (
+    <div class="feature-card__icon">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <Fragment set:html={icon} />
+      </svg>
+    </div>
+  )}
+  <h3 class="feature-card__title">{title}</h3>
+  <p class="feature-card__description">{description}</p>
+</div>
+
+<style>
+  .feature-card {
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: var(--radius-2xl);
+    transition: all var(--transition-normal);
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .feature-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Neumorphic Style */
+  .feature-card--neu {
+    background: var(--neu-bg);
+    box-shadow: var(--neu-shadow-light);
+  }
+
+  .feature-card--neu:hover {
+    box-shadow: var(--neu-shadow-lg);
+    transform: translateY(-4px);
+  }
+
+  /* Glassmorphism Style */
+  .feature-card--glass {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-backdrop-filter);
+    -webkit-backdrop-filter: var(--glass-backdrop-filter);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+  }
+
+  .feature-card--glass:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateY(-4px);
+  }
+
+  .feature-card__icon {
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    transition: transform var(--transition-normal);
+  }
+
+  .feature-card:hover .feature-card__icon {
+    transform: scale(1.1);
+  }
+
+  .feature-card__title {
+    font-size: var(--text-xl);
+    font-weight: var(--font-semibold);
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .feature-card__description {
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+  }
+
+  @media (max-width: 768px) {
+    .feature-card {
+      padding: 2rem;
+    }
+  }
+</style>

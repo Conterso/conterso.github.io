@@ -1,0 +1,105 @@
+---
+/**
+ * SectionHeader Component
+ * 
+ * A reusable section header component with optional subtitle and decoration.
+ * 
+ * @component
+ * @example
+ * <SectionHeader 
+ *   title="Advanced Features"
+ *   subtitle="Everything you need to succeed"
+ *   centered={true}
+ * />
+ * 
+ * @prop {string} title - The main heading text
+ * @prop {string} [subtitle] - Optional subtitle text
+ * @prop {boolean} [centered=true] - Center align the header
+ * @prop {string} [tag='h2'] - HTML heading tag to use
+ */
+
+export interface Props {
+  title: string;
+  subtitle?: string;
+  centered?: boolean;
+  tag?: 'h1' | 'h2' | 'h3' | 'h4';
+}
+
+const { title, subtitle, centered = true, tag = 'h2' } = Astro.props;
+const HeadingTag = tag;
+---
+
+<div class={`section-header ${centered ? 'section-header--centered' : ''} animate-on-scroll`}>
+  <div class="section-header__decoration"></div>
+  <HeadingTag class="section-header__title">{title}</HeadingTag>
+  {subtitle && (
+    <p class="section-header__subtitle">{subtitle}</p>
+  )}
+</div>
+
+<style>
+  .section-header {
+    margin-bottom: 4rem;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all var(--transition-slow);
+  }
+
+  .section-header.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .section-header--centered {
+    text-align: center;
+  }
+
+  .section-header__decoration {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-header--centered .section-header__decoration {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-header__title {
+    font-size: var(--text-4xl);
+    font-weight: var(--font-bold);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    line-height: var(--leading-tight);
+  }
+
+  .section-header__subtitle {
+    font-size: var(--text-xl);
+    color: var(--color-text-secondary);
+    max-width: 700px;
+    line-height: var(--leading-relaxed);
+  }
+
+  .section-header--centered .section-header__subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 768px) {
+    .section-header {
+      margin-bottom: 3rem;
+    }
+
+    .section-header__title {
+      font-size: var(--text-3xl);
+    }
+
+    .section-header__subtitle {
+      font-size: var(--text-lg);
+    }
+  }
+</style>
