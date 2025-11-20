@@ -1,0 +1,134 @@
+---
+/**
+ * CTASection Component
+ * 
+ * A reusable call-to-action section component with neumorphic design.
+ * 
+ * @component
+ * @example
+ * <CTASection 
+ *   title="Get Started Today"
+ *   description="Join thousands of satisfied customers"
+ *   primaryButton={{ text: "Sign Up", href: "/signup" }}
+ *   secondaryButton={{ text: "Learn More", href: "/about" }}
+ * />
+ * 
+ * @prop {string} title - The CTA heading
+ * @prop {string} description - The CTA description
+ * @prop {Object} primaryButton - Primary button config {text, href}
+ * @prop {Object} [secondaryButton] - Optional secondary button config {text, href}
+ * @prop {boolean} [glass=false] - Use glassmorphism style
+ */
+
+export interface Props {
+  title: string;
+  description: string;
+  primaryButton: {
+    text: string;
+    href: string;
+  };
+  secondaryButton?: {
+    text: string;
+    href: string;
+  };
+  glass?: boolean;
+}
+
+const { title, description, primaryButton, secondaryButton, glass = false } = Astro.props;
+---
+
+<section class={`cta-section ${glass ? 'cta-section--glass' : 'cta-section--neu'}`}>
+  <div class="container">
+    <div class="cta-section__content animate-on-scroll">
+      <h2 class="cta-section__title">{title}</h2>
+      <p class="cta-section__description">{description}</p>
+      <div class="cta-section__actions">
+        <a href={primaryButton.href} class="btn btn--primary btn--large">
+          {primaryButton.text}
+        </a>
+        {secondaryButton && (
+          <a href={secondaryButton.href} class="btn btn--secondary-light btn--large">
+            {secondaryButton.text}
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-section {
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section--neu {
+    background: linear-gradient(135deg, var(--neu-bg-light) 0%, var(--neu-bg) 100%);
+  }
+
+  .cta-section--glass {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    backdrop-filter: blur(10px);
+  }
+
+  .cta-section__content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all var(--transition-slow);
+  }
+
+  .cta-section__content.animate-in {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .cta-section__title {
+    font-size: var(--text-5xl);
+    font-weight: var(--font-bold);
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    line-height: var(--leading-tight);
+  }
+
+  .cta-section__description {
+    font-size: var(--text-xl);
+    color: var(--color-text-secondary);
+    margin-bottom: 2.5rem;
+    line-height: var(--leading-relaxed);
+  }
+
+  .cta-section__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .cta-section {
+      padding: 4rem 0;
+    }
+
+    .cta-section__title {
+      font-size: var(--text-3xl);
+    }
+
+    .cta-section__description {
+      font-size: var(--text-lg);
+    }
+
+    .cta-section__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+</style>

@@ -1,4 +1,15 @@
 ---
+/**
+ * BaseLayout Component
+ * 
+ * The base layout wrapper for all pages in the Conterso website.
+ * Includes meta tags, fonts, global styles, and Lenis smooth scrolling.
+ * 
+ * @component
+ * @prop {string} title - Page title for SEO
+ * @prop {string} [description] - Page description for SEO
+ */
+
 export interface Props {
   title: string;
   description?: string;
@@ -20,6 +31,9 @@ const { title, description = "Conterso - Innovative Technology Solutions" } = As
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     
+    <!-- Lenis Smooth Scrolling CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.0.42/dist/lenis.css" />
+    
     <title>{title}</title>
   </head>
   <body>
@@ -29,4 +43,31 @@ const { title, description = "Conterso - Innovative Technology Solutions" } = As
 
 <style is:global>
   @import '../styles/main.css';
+  
+  /* Lenis Smooth Scrolling Styles */
+  html.lenis {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
 </style>
+
+<script>
+  // Initialize Lenis smooth scrolling on page load
+  import { initScrollFeatures } from '../scripts/lenis.js';
+  initScrollFeatures();
+</script>

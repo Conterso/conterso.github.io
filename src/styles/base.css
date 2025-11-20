@@ -13,7 +13,7 @@ body {
   font-family: var(--font-sans);
   line-height: var(--leading-normal);
   color: var(--color-text-primary);
-  background-color: var(--color-bg-primary);
+  background: linear-gradient(135deg, var(--neu-bg-light) 0%, var(--neu-bg) 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -95,33 +95,53 @@ img {
   font-weight: var(--font-medium);
   text-decoration: none;
   border: 2px solid transparent;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-2xl);
   cursor: pointer;
   transition: all var(--transition-normal);
   min-height: 48px;
+  box-shadow: var(--neu-shadow-sm);
 }
 
 .btn--primary {
-  background-color: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: var(--color-text-white);
-  border-color: var(--color-primary);
+  border-color: transparent;
 }
 
 .btn--primary:hover {
-  background-color: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
+  box-shadow: var(--neu-shadow-light);
+  transform: translateY(-2px);
   color: var(--color-text-white);
 }
 
 .btn--secondary {
-  background-color: transparent;
+  background-color: var(--neu-bg);
   color: var(--color-primary);
-  border-color: var(--color-primary);
+  border-color: transparent;
+  box-shadow: var(--neu-shadow-light);
 }
 
 .btn--secondary:hover {
-  background-color: var(--color-primary);
-  color: var(--color-text-white);
+  box-shadow: var(--neu-shadow-dark);
+  transform: translateY(-2px);
+}
+
+.btn--secondary-light {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.btn--secondary-light:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: white;
+  color: white;
+}
+
+.btn--large {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--text-lg);
 }
 
 /* Sections */
@@ -146,17 +166,41 @@ section {
 
 /* Cards */
 .card {
-  background-color: var(--color-bg-primary);
-  border: 1px solid var(--color-border-light);
-  border-radius: var(--radius-xl);
+  background: var(--neu-bg);
+  border: none;
+  border-radius: var(--radius-2xl);
   padding: var(--space-8);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--neu-shadow-light);
   transition: all var(--transition-normal);
 }
 
 .card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
+  box-shadow: var(--neu-shadow-lg);
+  transform: translateY(-4px);
+}
+
+.card--glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop-filter);
+  -webkit-backdrop-filter: var(--glass-backdrop-filter);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.card--glass:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Scroll-triggered Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.animate-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Animations */
